@@ -18,4 +18,5 @@ func setup(character_data: CharacterData, package_data: PackageData):
 	package.load_package(package_data)
 
 func _on_approve_button_pressed() -> void:
+	print('Interrogation: Interrogation complete')
 	interrogation_complete.emit()

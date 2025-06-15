@@ -17,7 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-InterrogationManager="*res://scripts/managers/InterrogationManager.gd"
+DayManager="*res://scripts/managers/DayManager.gd"
+GameManager="*res://scripts/managers/GameManager.gd"
 
 [display]
 
