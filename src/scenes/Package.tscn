@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1r18fokr1s5b"]
+
+[ext_resource type="Script" uid="uid://c34d8dnht5crp" path="res://scripts/PackageDisplay.gd" id="1_aio1h"]
+
+[node name="Package" type="Node2D"]
+script = ExtResource("1_aio1h")
+
+[node name="Image" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

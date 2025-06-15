@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfv8cebd0myqu"]
+
+[ext_resource type="Script" uid="uid://djj2ipq26moa3" path="res://scripts/Interrogation.gd" id="1_wma2k"]
+
+[node name="InterrogationMinigame" type="Node2D"]
+script = ExtResource("1_wma2k")
+
+[node name="CharacterSlot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PackageSlot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 280.0
+offset_right = 320.0
+offset_bottom = 40.0
+
+[node name="Approve Button" type="Button" parent="."]
+offset_right = 73.0
+offset_bottom = 31.0
+text = "Approve"
+
+[connection signal="pressed" from="Approve Button" to="." method="_on_approve_button_pressed"]

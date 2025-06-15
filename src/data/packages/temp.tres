@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PackageData" load_steps=3 format=3 uid="uid://3trolyib2lgs"]
+
+[ext_resource type="Texture2D" uid="uid://c2pa007uj8io1" path="res://assets/packages/temp_package.png" id="1_ydw5w"]
+[ext_resource type="Script" uid="uid://udd4i3po5oqi" path="res://resources/PackageData.gd" id="2_jiidj"]
+
+[resource]
+script = ExtResource("2_jiidj")
+image = ExtResource("1_ydw5w")
+metadata/_custom_type_script = "uid://udd4i3po5oqi"
