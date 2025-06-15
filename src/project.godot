@@ -11,8 +11,18 @@ config_version=5
 [application]
 
 config/name="godot-wild-jam-82"
+run/main_scene="uid://dwdb0rahcukks"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+MinigameManager="*res://scripts/managers/MinigameManager.gd"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=240
 
 [rendering]
 
