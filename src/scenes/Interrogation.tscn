@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfv8cebd0myqu"]
 
-[ext_resource type="Script" uid="uid://djj2ipq26moa3" path="res://scripts/InterrogationMinigame.gd" id="1_6nkv5"]
+[ext_resource type="Script" uid="uid://djj2ipq26moa3" path="res://scripts/Interrogation.gd" id="1_wma2k"]
 
 [node name="InterrogationMinigame" type="Node2D"]
-script = ExtResource("1_6nkv5")
+script = ExtResource("1_wma2k")
 
 [node name="CharacterSlot" type="Control" parent="."]
 layout_mode = 3

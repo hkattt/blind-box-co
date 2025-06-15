@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-MinigameManager="*res://scripts/managers/MinigameManager.gd"
+InterrogationManager="*res://scripts/managers/InterrogationManager.gd"
 
 [display]
 
