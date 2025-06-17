@@ -1,0 +1,17 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://ddkiveq4ar8ft"]
+
+[ext_resource type="FontFile" uid="uid://ct3hyyyhx1ekm" path="res://assets/font/HelvetiPixel.ttf" id="1_6r2og"]
+[ext_resource type="Texture2D" uid="uid://vk6xhf1hrp23" path="res://assets/ui/text-box.png" id="2_hl4cj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bsj0i"]
+texture = ExtResource("2_hl4cj")
+texture_margin_left = 5.0
+texture_margin_top = 10.0
+texture_margin_right = 5.0
+texture_margin_bottom = 5.0
+
+[resource]
+Label/colors/font_color = Color(0.12549, 0.243137, 0.243137, 1)
+Label/font_sizes/font_size = 16
+Label/fonts/font = ExtResource("1_6r2og")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_bsj0i")
