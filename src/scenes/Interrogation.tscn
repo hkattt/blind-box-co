@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bfv8cebd0myqu"]
+[gd_scene load_steps=3 format=3 uid="uid://bfv8cebd0myqu"]
 
 [ext_resource type="Script" uid="uid://djj2ipq26moa3" path="res://scripts/Interrogation.gd" id="1_wma2k"]
+[ext_resource type="PackedScene" uid="uid://chmvhxmpav5pm" path="res://scenes/ui/Conversation.tscn" id="2_m0gvp"]
 
 [node name="InterrogationMinigame" type="Node2D"]
 script = ExtResource("1_wma2k")
@@ -22,5 +23,7 @@ offset_bottom = 40.0
 offset_right = 73.0
 offset_bottom = 31.0
 text = "Approve"
+
+[node name="Conversation" parent="." instance=ExtResource("2_m0gvp")]
 
 [connection signal="pressed" from="Approve Button" to="." method="_on_approve_button_pressed"]

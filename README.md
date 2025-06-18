@@ -20,7 +20,7 @@ To setup the project locally, simply clone the repository and open the project i
 - [Sheriff of Nottingham](https://www.gamesworld.com.au/product/sheriff-of-nottingham-2nd-edition/)
 
 ## Asset References
-
+- **pentacom**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=381
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 
