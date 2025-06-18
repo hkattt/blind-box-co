@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="DayData" load_steps=5 format=3 uid="uid://bpq7e50dyx0vd"]
+[gd_resource type="Resource" script_class="DayData" load_steps=4 format=3 uid="uid://bpq7e50dyx0vd"]
 
 [ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_1kygk"]
-[ext_resource type="Resource" uid="uid://cpnc5fe0lxyq4" path="res://data/days/interrogations/temp2.tres" id="2_tf818"]
-[ext_resource type="Resource" uid="uid://80dpgfvfgapt" path="res://data/days/interrogations/temp.tres" id="3_s51ys"]
+[ext_resource type="Resource" uid="uid://80dpgfvfgapt" path="res://data/days/interrogations/greg-interrogation.tres" id="2_iwjv1"]
 [ext_resource type="Script" uid="uid://cf8yjujibee5i" path="res://resources/DayData.gd" id="4_nijca"]
 
 [resource]
 script = ExtResource("4_nijca")
-interrogations = Array[ExtResource("1_1kygk")]([ExtResource("2_tf818"), ExtResource("3_s51ys")])
+interrogations = Array[ExtResource("1_1kygk")]([ExtResource("2_iwjv1")])
 metadata/_custom_type_script = "uid://cf8yjujibee5i"

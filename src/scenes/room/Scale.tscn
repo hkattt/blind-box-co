@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bql82x1p5jtsc"]
+
+[ext_resource type="Texture2D" uid="uid://b5fxrrg4vomff" path="res://assets/images/room/scale.png" id="1_3m1jh"]
+
+[node name="Scale" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_3m1jh")

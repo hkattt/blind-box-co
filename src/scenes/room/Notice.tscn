@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3jhosy5kqbbw"]
+
+[ext_resource type="Texture2D" uid="uid://bw73xspqdmyhb" path="res://assets/images/room/notice.png" id="1_73ngg"]
+
+[node name="Notice" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_73ngg")

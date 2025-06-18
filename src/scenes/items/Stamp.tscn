@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcrt50xoa5af6"]
+
+[ext_resource type="Script" uid="uid://cmvgi6p4x2y3j" path="res://scripts/items/Stamp.gd" id="1_0b3td"]
+[ext_resource type="Texture2D" uid="uid://bay0bt7u6fiox" path="res://assets/images/items/stamp-approved.png" id="1_xm68i"]
+[ext_resource type="Script" uid="uid://b0w4kw6jvegrx" path="res://scripts/components/Dragable.gd" id="2_ytuqr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0b3td"]
+size = Vector2(19.334, 5)
+
+[node name="Stamp" type="Area2D" groups=["Stamps"]]
+script = ExtResource("1_0b3td")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_xm68i")
+
+[node name="Dragable" type="Node2D" parent="."]
+script = ExtResource("2_ytuqr")
+metadata/_custom_type_script = "uid://b0w4kw6jvegrx"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 18)
+shape = SubResource("RectangleShape2D_0b3td")

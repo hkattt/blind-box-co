@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7ewqmgpvho65"]
+
+[ext_resource type="Texture2D" uid="uid://dkjqqfyhxgm5g" path="res://assets/images/items/chemical-detector.png" id="1_wygqo"]
+
+[node name="ChemicalDetector" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_wygqo")

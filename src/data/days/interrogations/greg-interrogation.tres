@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="InterrogationData" load_steps=4 format=3 uid="uid://80dpgfvfgapt"]
 
-[ext_resource type="Resource" uid="uid://ctbvnt6iwyehn" path="res://data/days/interrogations/characters/temp.tres" id="1_eagl6"]
+[ext_resource type="Resource" uid="uid://ctbvnt6iwyehn" path="res://data/days/interrogations/characters/greg.tres" id="1_eagl6"]
 [ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_mqe8h"]
-[ext_resource type="Resource" uid="uid://3trolyib2lgs" path="res://data/days/interrogations/packages/temp.tres" id="2_bev3g"]
+[ext_resource type="Resource" uid="uid://3trolyib2lgs" path="res://data/days/interrogations/packages/package.tres" id="2_bev3g"]
 
 [resource]
 script = ExtResource("1_mqe8h")

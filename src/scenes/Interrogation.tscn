@@ -1,29 +1,79 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfv8cebd0myqu"]
+[gd_scene load_steps=12 format=3 uid="uid://bfv8cebd0myqu"]
 
 [ext_resource type="Script" uid="uid://djj2ipq26moa3" path="res://scripts/Interrogation.gd" id="1_wma2k"]
-[ext_resource type="PackedScene" uid="uid://chmvhxmpav5pm" path="res://scenes/ui/Conversation.tscn" id="2_m0gvp"]
+[ext_resource type="Texture2D" uid="uid://jrh60sn505vr" path="res://assets/images/room/background.png" id="2_h2rq0"]
+[ext_resource type="Texture2D" uid="uid://bak6imwoaalvo" path="res://assets/images/room/company-logo.png" id="3_on0if"]
+[ext_resource type="PackedScene" uid="uid://cf2c0icjn1rcl" path="res://scenes/room/Window.tscn" id="4_o64pe"]
+[ext_resource type="PackedScene" uid="uid://c3jhosy5kqbbw" path="res://scenes/room/Notice.tscn" id="5_vuct2"]
+[ext_resource type="PackedScene" uid="uid://bql82x1p5jtsc" path="res://scenes/room/Scale.tscn" id="6_i1cgd"]
+[ext_resource type="PackedScene" uid="uid://bcrt50xoa5af6" path="res://scenes/items/Stamp.tscn" id="7_djaj8"]
+[ext_resource type="PackedScene" uid="uid://c80ia1to1uufr" path="res://scenes/items/Document.tscn" id="8_8nhuy"]
+[ext_resource type="PackedScene" uid="uid://b8ur8ferrlsl2" path="res://scenes/items/MetalDetector.tscn" id="9_7h7p4"]
+[ext_resource type="PackedScene" uid="uid://ccamphyahfrj5" path="res://scenes/items/XRay.tscn" id="10_padvj"]
+[ext_resource type="PackedScene" uid="uid://c7ewqmgpvho65" path="res://scenes/items/ChemicalDetector.tscn" id="11_m6uql"]
 
-[node name="InterrogationMinigame" type="Node2D"]
+[node name="Interrogation" type="Node2D"]
 script = ExtResource("1_wma2k")
-
-[node name="CharacterSlot" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="PackageSlot" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 280.0
-offset_right = 320.0
-offset_bottom = 40.0
 
 [node name="Approve Button" type="Button" parent="."]
 offset_right = 73.0
 offset_bottom = 31.0
 text = "Approve"
 
-[node name="Conversation" parent="." instance=ExtResource("2_m0gvp")]
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(160, 90)
+texture = ExtResource("2_h2rq0")
+
+[node name="Logo" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(57, 13)
+texture = ExtResource("3_on0if")
+
+[node name="Window" parent="." instance=ExtResource("4_o64pe")]
+position = Vector2(187, 53)
+
+[node name="CharacterSlot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 130.0
+offset_top = 33.0
+offset_right = 198.0
+offset_bottom = 92.0
+
+[node name="Notice" parent="." instance=ExtResource("5_vuct2")]
+position = Vector2(287, 47)
+
+[node name="Scale" parent="." instance=ExtResource("6_i1cgd")]
+position = Vector2(59, 101)
+
+[node name="PackageSlot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 108.0
+offset_bottom = 101.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Document" parent="CanvasLayer" instance=ExtResource("8_8nhuy")]
+position = Vector2(117, 150)
+
+[node name="StampApprove" parent="CanvasLayer" instance=ExtResource("7_djaj8")]
+position = Vector2(25, 151)
+
+[node name="StampDecline" parent="CanvasLayer" instance=ExtResource("7_djaj8")]
+position = Vector2(63, 151)
+type = 1
+
+[node name="MetalDetector" parent="CanvasLayer" instance=ExtResource("9_7h7p4")]
+position = Vector2(171, 146)
+
+[node name="XRay" parent="CanvasLayer" instance=ExtResource("10_padvj")]
+position = Vector2(238, 148)
+
+[node name="ChemicalDetector" parent="CanvasLayer" instance=ExtResource("11_m6uql")]
+position = Vector2(302, 146)
 
 [connection signal="pressed" from="Approve Button" to="." method="_on_approve_button_pressed"]

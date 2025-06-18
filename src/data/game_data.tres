@@ -1,11 +1,10 @@
-[gd_resource type="Resource" script_class="GameData" load_steps=5 format=3 uid="uid://cvwmyvkss4vfi"]
+[gd_resource type="Resource" script_class="GameData" load_steps=4 format=3 uid="uid://cvwmyvkss4vfi"]
 
 [ext_resource type="Script" uid="uid://cf8yjujibee5i" path="res://resources/DayData.gd" id="1_r34r7"]
 [ext_resource type="Resource" uid="uid://bpq7e50dyx0vd" path="res://data/days/day.tres" id="2_vllua"]
-[ext_resource type="Resource" uid="uid://b5cqoxu70l8c1" path="res://data/days/day2.tres" id="3_7fe16"]
 [ext_resource type="Script" uid="uid://po8htodqto00" path="res://resources/GameData.gd" id="4_yqv0c"]
 
 [resource]
 script = ExtResource("4_yqv0c")
-days = Array[ExtResource("1_r34r7")]([ExtResource("2_vllua"), ExtResource("3_7fe16")])
+days = Array[ExtResource("1_r34r7")]([ExtResource("2_vllua")])
 metadata/_custom_type_script = "uid://po8htodqto00"
