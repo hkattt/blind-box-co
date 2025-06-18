@@ -2,9 +2,11 @@ extends Node2D
 
 var dragging: bool = false 
 var drag_offset: Vector2 = Vector2.ZERO
+# Starting position of the parent object
 var resting_position: Vector2
 
 func _ready():
+	
 	resting_position = get_parent().global_position
 
 func _input(event: InputEvent) -> void:
@@ -13,9 +15,11 @@ func _input(event: InputEvent) -> void:
 			if event.pressed:
 				var mouse_pos = get_global_mouse_position()
 				var parent_sprite := get_parent().get_node("Sprite2D")
+				# Check if the click is within the parent sprite
 				if parent_sprite.get_rect().has_point(get_parent().to_local(mouse_pos)):
 					dragging = true
 					drag_offset = mouse_pos - get_parent().global_position
+			# Mouse is no longer being pressed
 			else:
 				if dragging:
 					dragging = false

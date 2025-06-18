@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca4kyo31kg7ig"
-path="res://.godot/imported/document-declined.png-47d86843eece8ac73b2ba8fc135965e7.ctex"
+uid="uid://buoy3ysrnlw1q"
+path="res://.godot/imported/screen-loading-1.png-7845b75e5f5813f858324f1aba337f8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/document-declined.png"
-dest_files=["res://.godot/imported/document-declined.png-47d86843eece8ac73b2ba8fc135965e7.ctex"]
+source_file="res://assets/images/items/chemical-detector/screen-loading-1.png"
+dest_files=["res://.godot/imported/screen-loading-1.png-7845b75e5f5813f858324f1aba337f8a.ctex"]
 
 [params]
 

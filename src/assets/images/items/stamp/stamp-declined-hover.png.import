@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctk84np8kunyb"
-path="res://.godot/imported/document-unsigned.png-0a0f890b6fbdb1ddec491257a24b0967.ctex"
+uid="uid://b88ywqmlcn4iv"
+path="res://.godot/imported/stamp-declined-hover.png-65afc76922d3940ffa132b298930d15e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/document-unsigned.png"
-dest_files=["res://.godot/imported/document-unsigned.png-0a0f890b6fbdb1ddec491257a24b0967.ctex"]
+source_file="res://assets/images/items/stamp/stamp-declined-hover.png"
+dest_files=["res://.godot/imported/stamp-declined-hover.png-65afc76922d3940ffa132b298930d15e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsqxgkx88y342"
-path="res://.godot/imported/stamp-declined.png-415ab7b0d3a3fa26ad337acb79f98dab.ctex"
+uid="uid://c41k0snkwq0hp"
+path="res://.godot/imported/x-ray.png-87e4c1bd85f7bd1482ead86b8bcb69c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/stamp-declined.png"
-dest_files=["res://.godot/imported/stamp-declined.png-415ab7b0d3a3fa26ad337acb79f98dab.ctex"]
+source_file="res://assets/images/items/x-ray/x-ray.png"
+dest_files=["res://.godot/imported/x-ray.png-87e4c1bd85f7bd1482ead86b8bcb69c3.ctex"]
 
 [params]
 

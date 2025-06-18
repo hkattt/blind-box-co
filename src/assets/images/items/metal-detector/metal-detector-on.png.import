@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4fifmtckae4y"
-path="res://.godot/imported/document-approved.png-61237bc12710f3a46d3561671c524f3c.ctex"
+uid="uid://oi05q2540bck"
+path="res://.godot/imported/metal-detector-on.png-e8a354629b301656f83253312605b320.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/items/document-approved.png"
-dest_files=["res://.godot/imported/document-approved.png-61237bc12710f3a46d3561671c524f3c.ctex"]
+source_file="res://assets/images/items/metal-detector/metal-detector-on.png"
+dest_files=["res://.godot/imported/metal-detector-on.png-e8a354629b301656f83253312605b320.ctex"]
 
 [params]
 
