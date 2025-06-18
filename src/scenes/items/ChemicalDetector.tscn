@@ -1,9 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7ewqmgpvho65"]
+[gd_scene load_steps=6 format=3 uid="uid://c7ewqmgpvho65"]
 
-[ext_resource type="Texture2D" uid="uid://dkjqqfyhxgm5g" path="res://assets/images/items/chemical-detector.png" id="1_wygqo"]
+[ext_resource type="Script" uid="uid://bv5lcdgacw40v" path="res://scripts/items/ChemicalDetector.gd" id="1_s3nxc"]
+[ext_resource type="Texture2D" uid="uid://dkjqqfyhxgm5g" path="res://assets/images/items/chemical-detector/chemical-detector.png" id="1_wygqo"]
+[ext_resource type="SpriteFrames" uid="uid://8vlcqcf83meg" path="res://assets/animations/chemical_detector_frames.tres" id="2_a571k"]
+[ext_resource type="PackedScene" uid="uid://bmxvytvy17tji" path="res://scenes/components/Dragable.tscn" id="4_041l2"]
 
-[node name="ChemicalDetector" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_041l2"]
+size = Vector2(21, 20)
+
+[node name="ChemicalDetector" type="Area2D"]
+script = ExtResource("1_s3nxc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 3
 texture = ExtResource("1_wygqo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 3
+position = Vector2(0, -8)
+sprite_frames = ExtResource("2_a571k")
+animation = &"Rest"
+
+[node name="Dragable" parent="." instance=ExtResource("4_041l2")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -8)
+shape = SubResource("RectangleShape2D_041l2")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="drag_end" from="Dragable" to="." method="_on_dragable_drag_end"]
+[connection signal="drag_start" from="Dragable" to="." method="_on_dragable_drag_start"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

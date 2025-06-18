@@ -31,8 +31,8 @@ func set_hover_texture():
 		StampType.DECLINE:
 			sprite.texture = decline_texture_hover
 			
-func _on_mouse_entered() -> void:
-	set_hover_texture()
-
-func _on_mouse_exited() -> void:
+func _on_dragable_drag_end() -> void:
 	set_resting_texture()
+
+func _on_dragable_drag_start() -> void:
+	set_hover_texture()

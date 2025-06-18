@@ -1,0 +1,49 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://8vlcqcf83meg"]
+
+[ext_resource type="Texture2D" uid="uid://buoy3ysrnlw1q" path="res://assets/images/items/chemical-detector/screen-loading-1.png" id="1_sposa"]
+[ext_resource type="Texture2D" uid="uid://bpqec1myqpstp" path="res://assets/images/items/chemical-detector/screen-danger.png" id="1_vokjg"]
+[ext_resource type="Texture2D" uid="uid://cs2j8i7wfqfnq" path="res://assets/images/items/chemical-detector/screen-loading-2.png" id="2_gnayj"]
+[ext_resource type="Texture2D" uid="uid://610ng2k5ptxt" path="res://assets/images/items/chemical-detector/screen-loading-3.png" id="3_vokjg"]
+[ext_resource type="Texture2D" uid="uid://8kg4078wej30" path="res://assets/images/items/chemical-detector/screen-loading-4.png" id="4_2vu3d"]
+[ext_resource type="Texture2D" uid="uid://cts725rlb4n0q" path="res://assets/images/items/chemical-detector/screen-safe.png" id="6_2vu3d"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vokjg")
+}],
+"loop": true,
+"name": &"Danger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_sposa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gnayj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vokjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2vu3d")
+}],
+"loop": true,
+"name": &"Loading",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Rest",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_2vu3d")
+}],
+"loop": true,
+"name": &"Safe",
+"speed": 5.0
+}]

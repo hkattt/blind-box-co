@@ -22,5 +22,5 @@ metadata/_custom_type_script = "uid://b0w4kw6jvegrx"
 position = Vector2(1, 0.25)
 shape = SubResource("RectangleShape2D_0b3td")
 
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="drag_end" from="Dragable" to="." method="_on_dragable_drag_end"]
+[connection signal="drag_start" from="Dragable" to="." method="_on_dragable_drag_start"]
