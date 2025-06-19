@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=4 format=3 uid="uid://ddkiveq4ar8ft"]
 
 [ext_resource type="FontFile" uid="uid://ct3hyyyhx1ekm" path="res://assets/font/HelvetiPixel.ttf" id="1_6r2og"]
-[ext_resource type="Texture2D" uid="uid://vk6xhf1hrp23" path="res://assets/ui/text-box.png" id="2_hl4cj"]
+[ext_resource type="Texture2D" uid="uid://vk6xhf1hrp23" path="res://assets/images/ui/text-box.png" id="2_hl4cj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bsj0i"]
 texture = ExtResource("2_hl4cj")

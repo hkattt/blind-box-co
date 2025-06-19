@@ -50,10 +50,10 @@ position = Vector2(59, 101)
 [node name="PackageSlot" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 12.0
-offset_top = 37.0
-offset_right = 108.0
-offset_bottom = 101.0
+offset_left = 8.0
+offset_top = 38.0
+offset_right = 104.0
+offset_bottom = 102.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
