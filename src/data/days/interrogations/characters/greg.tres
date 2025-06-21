@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=3 format=3 uid="uid://ctbvnt6iwyehn"]
+
+[ext_resource type="Texture2D" uid="uid://vy5e666sb1em" path="res://assets/images/characters/greg.png" id="1_2nlok"]
+[ext_resource type="Script" uid="uid://b11bqs0e38js3" path="res://resources/CharacterData.gd" id="2_idj3h"]
+
+[resource]
+script = ExtResource("2_idj3h")
+name = "Temp"
+portrait = ExtResource("1_2nlok")
+metadata/_custom_type_script = "uid://b11bqs0e38js3"

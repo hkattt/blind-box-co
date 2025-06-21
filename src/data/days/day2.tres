@@ -1,11 +1,12 @@
-[gd_resource type="Resource" script_class="DayData" load_steps=5 format=3 uid="uid://b5cqoxu70l8c1"]
+[gd_resource type="Resource" script_class="DayData" load_steps=5 format=3 uid="uid://jpuarmv1d60u"]
 
 [ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_v0k7f"]
-[ext_resource type="Resource" uid="uid://80dpgfvfgapt" path="res://data/days/interrogations/temp.tres" id="2_1m1on"]
-[ext_resource type="Resource" uid="uid://cpnc5fe0lxyq4" path="res://data/days/interrogations/temp2.tres" id="3_igsua"]
+[ext_resource type="Resource" uid="uid://80dpgfvfgapt" path="res://data/days/interrogations/greg-interrogation.tres" id="2_1m1on"]
+[ext_resource type="Resource" uid="uid://k4htw44a4q3k" path="res://data/days/notices/notice2.tres" id="3_v0k7f"]
 [ext_resource type="Script" uid="uid://cf8yjujibee5i" path="res://resources/DayData.gd" id="4_my8nn"]
 
 [resource]
 script = ExtResource("4_my8nn")
-interrogations = Array[ExtResource("1_v0k7f")]([ExtResource("2_1m1on"), ExtResource("3_igsua")])
+interrogations = Array[ExtResource("1_v0k7f")]([ExtResource("2_1m1on")])
+notice = ExtResource("3_v0k7f")
 metadata/_custom_type_script = "uid://cf8yjujibee5i"

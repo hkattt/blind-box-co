@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf2c0icjn1rcl"]
+
+[ext_resource type="Texture2D" uid="uid://l0mas7p584ah" path="res://assets/images/room/window-white.png" id="1_dcq2e"]
+[ext_resource type="Texture2D" uid="uid://bh2ih4c2dmuei" path="res://assets/images/room/window-pattern.png" id="2_yi8s7"]
+[ext_resource type="Texture2D" uid="uid://dba6empnv78o" path="res://assets/images/room/window-frame.png" id="3_yar53"]
+
+[node name="Window" type="Node2D"]
+
+[node name="White" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_dcq2e")
+
+[node name="Pattern" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("2_yi8s7")
+
+[node name="Frame" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(0, 3)
+texture = ExtResource("3_yar53")

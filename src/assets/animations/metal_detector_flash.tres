@@ -1,0 +1,34 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://bphm2b5bsr04a"]
+
+[ext_resource type="Texture2D" uid="uid://vtp74eil83h" path="res://assets/images/items/metal-detector/metal-detector-off.png" id="1_wcx20"]
+[ext_resource type="Texture2D" uid="uid://oi05q2540bck" path="res://assets/images/items/metal-detector/metal-detector-on.png" id="2_jke5c"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wcx20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jke5c")
+}],
+"loop": true,
+"name": &"Flash",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wcx20")
+}],
+"loop": true,
+"name": &"Off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jke5c")
+}],
+"loop": true,
+"name": &"On",
+"speed": 5.0
+}]

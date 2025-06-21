@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PackageData" load_steps=4 format=3 uid="uid://3trolyib2lgs"]
+
+[ext_resource type="Texture2D" uid="uid://d2ynx83rtnaqg" path="res://assets/images/packages/package.png" id="1_wmkg4"]
+[ext_resource type="Script" uid="uid://udd4i3po5oqi" path="res://resources/PackageData.gd" id="2_s3oon"]
+[ext_resource type="Texture2D" uid="uid://y1hn0c318fuw" path="res://assets/images/packages/package-x-ray.png" id="3_s3oon"]
+
+[resource]
+script = ExtResource("2_s3oon")
+image = ExtResource("1_wmkg4")
+xray_image = ExtResource("3_s3oon")
+has_contraband = false
+has_metal = true
+has_chemical = false
+metadata/_custom_type_script = "uid://udd4i3po5oqi"

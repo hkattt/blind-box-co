@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuxp5bujto2d5"]
+
+[ext_resource type="Texture2D" uid="uid://bl5k1q83ktf53" path="res://assets/images/items/x-ray/x-ray-mask-inverted.png" id="1_iq4p4"]
+[ext_resource type="Script" uid="uid://ypkomb03vlnh" path="res://scripts/components/Mask.gd" id="2_dedqy"]
+
+[node name="Mask" type="Sprite2D"]
+texture_filter = 3
+texture = ExtResource("1_iq4p4")
+script = ExtResource("2_dedqy")

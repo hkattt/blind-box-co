@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3jhosy5kqbbw"]
+
+[ext_resource type="Texture2D" uid="uid://bw73xspqdmyhb" path="res://assets/images/room/notice.png" id="1_73ngg"]
+[ext_resource type="Script" uid="uid://ebfbda06jhae" path="res://scripts/room/Notice.gd" id="1_xhckg"]
+
+[node name="Notice" type="Node2D"]
+script = ExtResource("1_xhckg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+texture = ExtResource("1_73ngg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -24.0
+offset_top = -24.0
+offset_right = 26.0
+offset_bottom = 44.0
+autowrap_mode = 3
