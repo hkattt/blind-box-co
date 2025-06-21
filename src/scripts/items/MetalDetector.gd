@@ -1,5 +1,7 @@
 class_name MetalDetector extends Area2D
 
+signal metal_detector_used
+
 enum MetalDetectorState {
 	ON,
 	OFF,
@@ -24,6 +26,7 @@ func _on_dragable_drag_end() -> void:
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Packages") and area.get_has_metal():
 		state = MetalDetectorState.FLASHING
+		metal_detector_used.emit()
 	_update_from_state()	
 
 func _on_area_exited(area: Area2D) -> void:
