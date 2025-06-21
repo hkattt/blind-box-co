@@ -13,6 +13,12 @@ var state: DocumentState = DocumentState.UNSIGNED
 var approve_texture: Texture2D = preload("res://assets/images/items/document/document-approved.png")
 var decline_texture: Texture2D = preload("res://assets/images/items/document/document-declined.png")
 
+func is_signed() -> bool:
+	return state != DocumentState.UNSIGNED
+
+func is_approved() -> bool:
+	return state == DocumentState.APPROVED
+
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Stamps"):
 		if area.type == Stamp.StampType.APPROVE:

@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://ccamphyahfrj5"]
+[gd_scene load_steps=5 format=3 uid="uid://ccamphyahfrj5"]
 
 [ext_resource type="Texture2D" uid="uid://c41k0snkwq0hp" path="res://assets/images/items/x-ray/x-ray.png" id="1_mqk1k"]
+[ext_resource type="Script" uid="uid://c7hhe68xffmeb" path="res://scripts/items/XRay.gd" id="1_u7he7"]
 [ext_resource type="PackedScene" uid="uid://bmxvytvy17tji" path="res://scenes/components/Dragable.tscn" id="2_k3ddq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k3ddq"]
-size = Vector2(57, 35)
+size = Vector2(74, 48)
 
 [node name="XRay" type="Area2D" groups=["Xray"]]
+script = ExtResource("1_u7he7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 3
@@ -15,5 +17,6 @@ texture = ExtResource("1_mqk1k")
 [node name="Dragable" parent="." instance=ExtResource("2_k3ddq")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_k3ddq")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

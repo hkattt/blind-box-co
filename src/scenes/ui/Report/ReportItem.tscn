@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm0glsmtaadn7"]
+
+[ext_resource type="Script" uid="uid://deejjsutuqau2" path="res://scripts/ui/Report/ReportItem.gd" id="1_6task"]
+
+[node name="ReportItem" type="HBoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 25
+script = ExtResource("1_6task")
+
+[node name="CustomerName" type="Label" parent="."]
+texture_filter = 3
+layout_mode = 2
+text = "Customer Name"
+
+[node name="Result" type="Label" parent="."]
+texture_filter = 3
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "Result"
+
+[node name="Profit" type="Label" parent="."]
+texture_filter = 3
+layout_mode = 2
+text = "Profit"

@@ -1,5 +1,7 @@
 class_name ChemicalDetector extends Node2D
 
+signal chemical_detector_used
+
 enum ChemicalDetectorState {
 	REST,
 	DRAGGING,
@@ -33,6 +35,7 @@ func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Packages"):
 		state = ChemicalDetectorState.LOADING
 		package = area
+		chemical_detector_used.emit()
 		timer.start(3.0)
 		_update_from_state()
 		

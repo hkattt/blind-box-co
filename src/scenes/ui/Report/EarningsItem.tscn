@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq3wmfkcuff5k"]
+
+[ext_resource type="Script" uid="uid://kquwdtqt28vw" path="res://scripts/ui/Report/EarningsItem.gd" id="1_5fxtl"]
+
+[node name="EarningsItem" type="HBoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 25
+script = ExtResource("1_5fxtl")
+
+[node name="DailyEarningsContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="DailyEarningsTitle" type="Label" parent="DailyEarningsContainer"]
+texture_filter = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Daily Earnings:"
+
+[node name="DailyEarnings" type="Label" parent="DailyEarningsContainer"]
+texture_filter = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0.47451, 0.635294, 0.462745, 1)
+text = "Result"
+
+[node name="TotalEarningsContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TotalEarningsTitle" type="Label" parent="TotalEarningsContainer"]
+texture_filter = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Total:"
+
+[node name="TotalEarnings" type="Label" parent="TotalEarningsContainer"]
+texture_filter = 3
+layout_mode = 2
+theme_override_colors/font_color = Color(0.47451, 0.635294, 0.462745, 1)
+text = "Result"
