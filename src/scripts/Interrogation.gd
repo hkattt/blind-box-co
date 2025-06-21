@@ -15,6 +15,7 @@ func setup(character_data: CharacterData, package_data: PackageData, notice_data
 	var character: Node2D = character_scene.instantiate()
 	character_slot.add_child(character)
 	character.load_character(character_data)
+	character.document_received.connect(_on_document_received, CONNECT_ONE_SHOT)
 	
 	var package: Node2D = package_scene.instantiate()
 	package_slot.add_child(package)
@@ -23,6 +24,6 @@ func setup(character_data: CharacterData, package_data: PackageData, notice_data
 	
 	notice.load_notice(notice_data)
 
-func _on_approve_button_pressed() -> void:
+func _on_document_received() -> void:
 	print('Interrogation: Interrogation complete')
 	interrogation_complete.emit()

@@ -21,6 +21,7 @@ To setup the project locally, simply clone the repository and open the project i
 
 ## Asset References
 - **pentacom**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=381
+- **DuffsDevice**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=468
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 

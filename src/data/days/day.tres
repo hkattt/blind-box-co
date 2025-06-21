@@ -7,6 +7,6 @@
 
 [resource]
 script = ExtResource("4_nijca")
-interrogations = Array[ExtResource("1_1kygk")]([ExtResource("2_iwjv1")])
+interrogations = Array[ExtResource("1_1kygk")]([ExtResource("2_iwjv1"), ExtResource("2_iwjv1")])
 notice = ExtResource("3_1kygk")
 metadata/_custom_type_script = "uid://cf8yjujibee5i"

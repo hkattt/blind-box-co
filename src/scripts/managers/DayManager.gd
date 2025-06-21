@@ -27,6 +27,10 @@ func process_next_interrogation() -> void:
 	var interrogation_data = interrogation_queue.pop_front()
 	# Create a new interrogation instance
 	current_interrogation = interrogation_scene.instantiate()
+	# Add the new interrogation. Defer the call to allow everything to finish
+	call_deferred("_add_interrogation", interrogation_data)
+
+func _add_interrogation(interrogation_data: InterrogationData) -> void:
 	get_tree().current_scene.add_child(current_interrogation)
 	# Populate with the interrogation data 
 	current_interrogation.setup(interrogation_data.character, interrogation_data.package, notice_data)

@@ -1,10 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://cr1wagw7mq66l"]
+[gd_scene load_steps=4 format=3 uid="uid://cr1wagw7mq66l"]
 
 [ext_resource type="Script" uid="uid://dm8pjtg2a0154" path="res://scripts/Character.gd" id="1_53v7d"]
+[ext_resource type="Texture2D" uid="uid://vy5e666sb1em" path="res://assets/images/characters/greg.png" id="2_3i3nt"]
 
-[node name="Character" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53v7d"]
+size = Vector2(26, 48)
+
+[node name="Character" type="Area2D"]
 script = ExtResource("1_53v7d")
 
 [node name="Portrait" type="TextureRect" parent="."]
+texture_filter = 3
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("2_3i3nt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 33)
+shape = SubResource("RectangleShape2D_53v7d")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
