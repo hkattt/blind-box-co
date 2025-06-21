@@ -8,7 +8,7 @@
 script = ExtResource("2_s3oon")
 image = ExtResource("1_wmkg4")
 xray_image = ExtResource("3_s3oon")
-has_contraband = true
+has_contraband = false
 has_metal = false
-has_chemical = true
+has_chemical = false
 metadata/_custom_type_script = "uid://udd4i3po5oqi"

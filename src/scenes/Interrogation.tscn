@@ -41,9 +41,6 @@ offset_top = 33.0
 offset_right = 198.0
 offset_bottom = 92.0
 
-[node name="Notice" parent="." instance=ExtResource("5_vuct2")]
-position = Vector2(287, 47)
-
 [node name="Scale" parent="." instance=ExtResource("6_i1cgd")]
 position = Vector2(59, 101)
 
@@ -54,6 +51,9 @@ offset_left = 8.0
 offset_top = 38.0
 offset_right = 104.0
 offset_bottom = 102.0
+
+[node name="Notice" parent="." instance=ExtResource("5_vuct2")]
+position = Vector2(287, 47)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
