@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b1r18fokr1s5b"]
 
-[ext_resource type="Script" uid="uid://c34d8dnht5crp" path="res://scripts/PackageDisplay.gd" id="1_aio1h"]
+[ext_resource type="Script" uid="uid://c34d8dnht5crp" path="res://scripts/Package.gd" id="1_aio1h"]
 [ext_resource type="Texture2D" uid="uid://d2ynx83rtnaqg" path="res://assets/images/packages/package.png" id="2_1mkiv"]
 [ext_resource type="Texture2D" uid="uid://y1hn0c318fuw" path="res://assets/images/packages/package-x-ray.png" id="2_gx8m8"]
 [ext_resource type="PackedScene" uid="uid://cuxp5bujto2d5" path="res://scenes/components/Mask.tscn" id="5_lloef"]
@@ -11,17 +11,17 @@ size = Vector2(63, 42)
 [node name="Package" type="Area2D" groups=["Packages"]]
 script = ExtResource("1_aio1h")
 
-[node name="X-Ray Package" type="Sprite2D" parent="."]
+[node name="XRayPackage" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(48, 32)
 texture = ExtResource("2_gx8m8")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Package" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(48, 32)
 texture = ExtResource("2_1mkiv")
 
-[node name="Mask" parent="Sprite2D" instance=ExtResource("5_lloef")]
+[node name="Mask" parent="Package" instance=ExtResource("5_lloef")]
 position = Vector2(-7, -2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Packages"]]

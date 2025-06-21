@@ -1,9 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8ur8ferrlsl2"]
+[gd_scene load_steps=5 format=3 uid="uid://b8ur8ferrlsl2"]
 
+[ext_resource type="Script" uid="uid://5l58damslb3i" path="res://scripts/items/MetalDetector.gd" id="1_h7gdq"]
 [ext_resource type="Texture2D" uid="uid://vtp74eil83h" path="res://assets/images/items/metal-detector/metal-detector-off.png" id="1_xli8o"]
+[ext_resource type="PackedScene" uid="uid://bmxvytvy17tji" path="res://scenes/components/Dragable.tscn" id="3_hqjxu"]
 
-[node name="MetalDetector" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xli8o"]
+size = Vector2(15, 39)
+
+[node name="MetalDetector" type="Area2D"]
+script = ExtResource("1_h7gdq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 3
 texture = ExtResource("1_xli8o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -8.5)
+shape = SubResource("RectangleShape2D_xli8o")
+
+[node name="Dragable" parent="." instance=ExtResource("3_hqjxu")]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[connection signal="drag_end" from="Dragable" to="." method="_on_dragable_drag_end"]
+[connection signal="drag_start" from="Dragable" to="." method="_on_dragable_drag_start"]
