@@ -25,3 +25,4 @@ To setup the project locally, simply clone the repository and open the project i
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 
 - **Soma Animus**. Global audio player. Retrieved from: https://www.youtube.com/watch?v=lILnUD3xph8
+- **Gnumaru**. 2D Mask. Retrieved from: https://github.com/Gnumaru/Gnumarus2DMaskComponentAndShaderForGodot4

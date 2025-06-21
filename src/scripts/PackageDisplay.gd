@@ -9,4 +9,6 @@ func set_xray(_xray: Area2D):
 	
 func load_package(package_data: PackageData):
 	sprite.texture = package_data.image
-	#mask.global_position = xray.global_position
+	
+func _process(_delta: float):
+	mask.global_position = xray.global_position
