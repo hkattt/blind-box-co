@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8ur8ferrlsl2"]
+[gd_scene load_steps=6 format=3 uid="uid://b8ur8ferrlsl2"]
 
 [ext_resource type="Script" uid="uid://5l58damslb3i" path="res://scripts/items/MetalDetector.gd" id="1_h7gdq"]
 [ext_resource type="Texture2D" uid="uid://vtp74eil83h" path="res://assets/images/items/metal-detector/metal-detector-off.png" id="1_xli8o"]
 [ext_resource type="PackedScene" uid="uid://bmxvytvy17tji" path="res://scenes/components/Dragable.tscn" id="3_hqjxu"]
+[ext_resource type="SpriteFrames" uid="uid://bphm2b5bsr04a" path="res://assets/animations/metal_detector_flash.tres" id="4_x7dh7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xli8o"]
 size = Vector2(15, 39)
@@ -11,8 +12,15 @@ size = Vector2(15, 39)
 script = ExtResource("1_h7gdq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 texture_filter = 3
 texture = ExtResource("1_xli8o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 3
+sprite_frames = ExtResource("4_x7dh7")
+animation = &"Flash"
+frame_progress = 0.530419
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -8.5)

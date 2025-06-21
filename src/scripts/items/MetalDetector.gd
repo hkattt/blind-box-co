@@ -2,26 +2,44 @@ class_name MetalDetector extends Area2D
 
 enum MetalDetectorState {
 	ON,
-	OFF
+	OFF,
+	FLASHING
 }
 
-@onready var sprite: Sprite2D = $Sprite2D
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-var on_texture: Texture2D        = preload("res://assets/images/items/metal-detector/metal-detector-on.png")
-var off_texture: Texture2D       = preload("res://assets/images/items/metal-detector/metal-detector-on.png")
-var on_texture_hover: Texture2D  = preload("res://assets/images/items/metal-detector/metal-detector-off-hover.png")
-var off_texture_hover: Texture2D = preload("res://assets/images/items/metal-detector/metal-detector-off-hover.png")
+var state: MetalDetectorState = MetalDetectorState.OFF
+
+func _ready() -> void:
+	_update_from_state()
 
 func _on_dragable_drag_start() -> void:
-	sprite.texture = on_texture_hover
+	state = MetalDetectorState.ON
+	_update_from_state()
 
 func _on_dragable_drag_end() -> void:
-	sprite.texture = on_texture
+	state = MetalDetectorState.OFF
+	_update_from_state()
 
 func _on_area_entered(area: Area2D) -> void:
-	if area.is_in_group("Packages"):
-		sprite.texture = on_texture_hover
+	if area.is_in_group("Packages") and area.get_has_metal():
+		state = MetalDetectorState.FLASHING
+	_update_from_state()	
 
 func _on_area_exited(area: Area2D) -> void:
 	if area.is_in_group("Packages"):
-		sprite.texture = off_texture_hover
+		state = MetalDetectorState.ON
+	_update_from_state()
+
+func _update_from_state():
+	animated_sprite.stop()
+	
+	match state:
+		MetalDetectorState.OFF:
+			animated_sprite.animation = "Off"
+		MetalDetectorState.ON:
+			animated_sprite.animation = "On"
+		MetalDetectorState.FLASHING:
+			animated_sprite.animation = "Flash"
+			
+	animated_sprite.play()

@@ -19,39 +19,38 @@ var state: ChemicalDetectorState = ChemicalDetectorState.REST
 var package: Area2D
 
 func _ready() -> void:
-	animated_sprite.play()
-	update_textures()
+	_update_from_state()
 
 func _on_dragable_drag_start() -> void:
 	state = ChemicalDetectorState.DRAGGING
-	update_textures()
+	_update_from_state()
 
 func _on_dragable_drag_end() -> void:
 	state = ChemicalDetectorState.REST
-	update_textures()
+	_update_from_state()
 
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Packages"):
 		state = ChemicalDetectorState.LOADING
 		package = area
 		timer.start(3.0)
-		update_textures()
+		_update_from_state()
 		
 func _on_area_exited(area: Area2D) -> void:
 	if area.is_in_group("Packages"):
 		if (state == ChemicalDetectorState.LOADING):
 			state = ChemicalDetectorState.REST
 		timer.stop()
-		update_textures()
+		_update_from_state()
 
 func _on_timer_timeout() -> void:
 	if package.get_has_chemical():
 		state = ChemicalDetectorState.DANGER
 	else:
 		state = ChemicalDetectorState.SAFE
-	update_textures()
+	_update_from_state()
 	
-func update_textures() -> void:
+func _update_from_state() -> void:
 	animated_sprite.stop()
 	
 	match state:
