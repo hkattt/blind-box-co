@@ -1,21 +1,21 @@
 {
   "type": "conversation",
   "lines": [
-    {
-      "speaker": "Theorore",
-      "line": "I heard perfumes can be expensive"
-    },
-    {
-      "speaker": "Dave",
-      "line": "I am crazy dave"
-    },
-    {
-      "speaker": "Theorore",
-      "line": "Dave, you cannot appreciate my brilliance"
-    },
-    {
-      "speaker": "Dave",
-      "line": "I am crazy DAVVVEEEEE!!!!!!!"
-    }
+	{
+	  "speaker": "Theorore",
+	  "line": "I heard perfumes can be expensive"
+	},
+	{
+	  "speaker": "Dave",
+	  "line": "I am crazy dave"
+	},
+	{
+	  "speaker": "Theorore",
+	  "line": "Dave, you cannot appreciate my brilliance"
+	},
+	{
+	  "speaker": "Dave",
+	  "line": "I am crazy DAVVVEEEEE!!!!!!!"
+	}
   ]
 }

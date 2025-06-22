@@ -13,6 +13,8 @@ var profit: int
 func _ready() -> void:
 	customer_name_label.text = customer_name
 	result_label.text = result
+	if (profit < 0):
+		profit_label.add_theme_color_override("font_color", "#9F76A2")
 	profit_label.text = str(profit)
 
 static func create(p_customer_name: String, p_result: String, p_profit: int) -> ReportItem:

@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 DayManager="*res://scripts/managers/DayManager.gd"
 GameManager="*res://scripts/managers/GameManager.gd"
 DialogueManager="*res://scripts/managers/DialogueManager.gd"
+ReportManager="*res://scripts/managers/ReportManager.gd"
 
 [display]
 

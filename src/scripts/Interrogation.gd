@@ -48,17 +48,7 @@ func setup(character_data: CharacterData, package_data: PackageData, notice_data
 func _on_document_received(approved: bool) -> void:
 	print('Interrogation: Interrogation complete')
 	interrogation_result.approved = approved
-	if approved:
-		if package.get_has_contraband():
-			interrogation_result.outcome = InterrogationResultData.InterrogationOutcome.FALSE_POSITIVE
-		else:
-			interrogation_result.outcome = InterrogationResultData.InterrogationOutcome.TRUE_NEGATIVE
-	else:
-		if package.get_has_contraband():
-			interrogation_result.outcome = InterrogationResultData.InterrogationOutcome.FALSE_NEGATIVE
-		else:
-			interrogation_result.outcome = InterrogationResultData.InterrogationOutcome.TRUE_NEGATIVE
-	
+	interrogation_result.outcome = ReportManager.interrogation_outcome(approved, package.get_has_contraband())
 	interrogation_complete.emit(interrogation_result)
 
 func _on_metal_detector_used() -> void:
