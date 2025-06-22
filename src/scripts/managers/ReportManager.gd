@@ -64,16 +64,18 @@ func add_daily_earnings(earnings: int):
 	total_earnings += earnings
 
 func interrogation_outcome(approved: bool, has_contraband: bool) -> InterrogationResultData.InterrogationOutcome:
+	print(approved)
+	print(has_contraband)
 	if approved:
-		if has_contraband:
-			return InterrogationResultData.InterrogationOutcome.FALSE_POSITIVE
-		else:
-			return InterrogationResultData.InterrogationOutcome.TRUE_NEGATIVE
-	else:
 		if has_contraband:
 			return InterrogationResultData.InterrogationOutcome.FALSE_NEGATIVE
 		else:
 			return InterrogationResultData.InterrogationOutcome.TRUE_NEGATIVE
+	else:
+		if has_contraband:
+			return InterrogationResultData.InterrogationOutcome.TRUE_POSITIVE
+		else:
+			return InterrogationResultData.InterrogationOutcome.FALSE_POSITIVE
 
 func outcome_to_string(outcome: InterrogationResultData.InterrogationOutcome) -> String:
 	match outcome:

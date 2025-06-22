@@ -5,17 +5,17 @@
 [node name="ReportItem" type="HBoxContainer"]
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_constants/separation = 25
 script = ExtResource("1_6task")
 
 [node name="CustomerName" type="Label" parent="."]
 texture_filter = 3
+custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
-text = "Customer Name"
+text = "Name"
 
 [node name="Result" type="Label" parent="."]
 texture_filter = 3
-custom_minimum_size = Vector2(50, 0)
+custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Result"
 
