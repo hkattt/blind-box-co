@@ -11,4 +11,6 @@ xray_image = ExtResource("3_wivoo")
 has_contraband = false
 has_metal = false
 has_chemical = false
+x_offset = -52
+y_offset = -26
 metadata/_custom_type_script = "uid://udd4i3po5oqi"

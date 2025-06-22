@@ -34,11 +34,14 @@ To setup the project locally, simply clone the repository and open the project i
 - **LilMati**. Dialogue 5 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453085/
 - **F.M.Audio**. Crunch paper SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/F.M.Audio/sounds/561733/
 - **pytho0n11**. Scan SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/pyth0n11/sounds/706447/
+- **AceOfSpadesP...**. Loading SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/AceOfSpadesProduc100/sounds/340959/
 - **unadamlar**. Correct SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/unadamlar/sounds/476178/
 - **BaggoNotes**. Incorrect SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/BaggoNotes/sounds/720893/
 - **PeterBluewin**. Morning SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/PeterBluewin/sounds/728551/?
+- **maxmakessounds**. Victory SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/maxmakessounds/sounds/353546/
+- **Leszek_Szary**. Failure SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/Leszek_Szary/sounds/171672/
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 
 - **Soma Animus**. Global audio player. Retrieved from: https://www.youtube.com/watch?v=lILnUD3xph8
-- **Gnumaru**. 2D Mask. Retrieved from: https://github.com/Gnumaru/Gnumarus2DMaskComponentAndShaderForGodot4
+- **golddotasksquestions**. 2D Mask. Retrieved from: https://github.com/godotengine/godot-proposals/issues/4282#issuecomment-1098859866

@@ -7,6 +7,7 @@ enum Sound {
 	METAL_DETECTOR,
 	CRUNCH_PAPER,
 	SCAN,
+	LOADING,
 	CORRECT,
 	INCORRECT,
 	DIALOGUE1,
@@ -14,7 +15,9 @@ enum Sound {
 	DIALOGUE3,
 	DIALOGUE4,
 	DIALOGUE5,
-	MORNING
+	MORNING,
+	VICTORY,
+	FAILURE
 }
 
 @onready var sound_player: AudioStreamPlayer2D = $SoundPlayer
@@ -25,6 +28,7 @@ enum Sound {
 @onready var metal_detector_sound: AudioStream = preload("res://assets/sfx/metal-detector.mp3")
 @onready var crunch_paper: AudioStream         = preload("res://assets/sfx/crunch-paper.mp3")
 @onready var scan_sound: AudioStream           = preload("res://assets/sfx/scan.mp3")
+@onready var loading_sound: AudioStream        = preload("res://assets/sfx/loading.mp3")
 @onready var correct_sound: AudioStream        = preload("res://assets/sfx/correct.mp3")
 @onready var incorrect_sound: AudioStream      = preload("res://assets/sfx/incorrect.mp3")
 @onready var dialogue1_sound: AudioStream      = preload("res://assets/sfx/dialogue-1.mp3")
@@ -33,6 +37,8 @@ enum Sound {
 @onready var dialogue4_sound: AudioStream      = preload("res://assets/sfx/dialogue-4.mp3")
 @onready var dialogue5_sound: AudioStream      = preload("res://assets/sfx/dialogue-5.mp3")
 @onready var morning_sound: AudioStream        = preload("res://assets/sfx/morning.mp3")
+@onready var victory_sound: AudioStream        = preload("res://assets/sfx/victory.mp3")
+@onready var failure_sound: AudioStream        = preload("res://assets/sfx/failure.mp3")
 
 @onready var sounds: Dictionary = {
 	Sound.CLICK:    	  click_sound,
@@ -41,6 +47,7 @@ enum Sound {
 	Sound.METAL_DETECTOR: metal_detector_sound,
 	Sound.CRUNCH_PAPER:   crunch_paper,
 	Sound.SCAN:           scan_sound,
+	Sound.LOADING:        loading_sound,
 	Sound.CORRECT:        correct_sound,
 	Sound.INCORRECT:      incorrect_sound,
 	Sound.DIALOGUE1:      dialogue1_sound,
@@ -48,7 +55,9 @@ enum Sound {
 	Sound.DIALOGUE3:      dialogue3_sound,
 	Sound.DIALOGUE4:      dialogue4_sound,
 	Sound.DIALOGUE5:      dialogue5_sound,
-	Sound.MORNING:        morning_sound
+	Sound.MORNING:        morning_sound,
+	Sound.VICTORY:        victory_sound,
+	Sound.FAILURE:        failure_sound
 }
 
 func play_sound(sound: Sound, volume_db: float = 0.0) -> void:

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3 uid="uid://bvjwx8ydkf0k2"]
+
+[ext_resource type="Script" uid="uid://b11bqs0e38js3" path="res://resources/CharacterData.gd" id="1_15gyu"]
+[ext_resource type="Texture2D" uid="uid://c1cs3is3osbsj" path="res://assets/images/characters/celeste.png" id="1_vidtm"]
+[ext_resource type="Texture2D" uid="uid://xo4igqdx7jcd" path="res://assets/images/characters/celestia-hover.png" id="2_lib1a"]
+
+[resource]
+script = ExtResource("1_15gyu")
+name = "Celestia"
+portrait = ExtResource("1_vidtm")
+portrait_hover = ExtResource("2_lib1a")
+dialoge_sound = 1
+dialoge_file_name = "celestia"
+metadata/_custom_type_script = "uid://b11bqs0e38js3"

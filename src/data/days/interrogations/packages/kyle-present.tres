@@ -11,4 +11,6 @@ xray_image = ExtResource("3_2j1tm")
 has_contraband = true
 has_metal = true
 has_chemical = true
+x_offset = -60
+y_offset = -26
 metadata/_custom_type_script = "uid://udd4i3po5oqi"

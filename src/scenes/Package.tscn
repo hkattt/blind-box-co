@@ -22,6 +22,7 @@ position = Vector2(48, 32)
 texture = ExtResource("3_gx8m8")
 
 [node name="Mask" parent="Package" instance=ExtResource("5_lloef")]
+visible = false
 position = Vector2(-7, -2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Packages"]]

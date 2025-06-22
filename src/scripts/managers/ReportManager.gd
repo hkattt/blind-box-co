@@ -5,11 +5,14 @@ const XRAY_COST: int              = 20
 const CHEMICAL_DETECTOR_COST: int = 10
 
 var daily_earnings: int = 0
-var total_earnings: int 
+var total_earnings: int = 0
 
 var metal_detector_uses: int = 0
 var xray_uses: int = 0
 var chemical_detector_uses: int = 0
+
+func reset_total() -> void:
+	total_earnings = 0
 
 func reset():
 	daily_earnings = 0
