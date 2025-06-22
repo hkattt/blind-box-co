@@ -15,7 +15,7 @@ text = "Name"
 
 [node name="Result" type="Label" parent="."]
 texture_filter = 3
-custom_minimum_size = Vector2(70, 0)
+custom_minimum_size = Vector2(80, 0)
 layout_mode = 2
 text = "Result"
 
