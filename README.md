@@ -20,6 +20,12 @@ The game is fully controlled using the mouse.
 
 - **Chemical Detecto**r. Click and drag over the package. Loads and shows result.
 
+## Images
+<img src="assets/boss.png" alt="Boss" width="320" height="240"/>  
+<img src="assets/mona.png" alt="Mona" width="320" height="240"/>  
+<img src="assets/alien-declare.png" alt="Alien Declare" width="320" height="240"/>  
+<img src="assets/barney-chemical.png" alt="Barney Chemical" width="320" height="240"/>  
+
 ## Dependencies
 
 The only dependency is the [Godot 4 game engine](https://godotengine.org/). 
