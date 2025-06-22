@@ -5,6 +5,8 @@ signal interrogation_complete(result: InterrogationResultData)
 @onready var character_slot: Control             = $CharacterSlot
 @onready var package_slot: Control               = $PackageSlot
 @onready var notice: Notice                      = $Notice
+@onready var timer: Timer                        = $Timer
+@onready var text_box: TextBox                   = $CanvasLayer/TextBox
 @onready var document: Document                  = $CanvasLayer/Document
 @onready var metal_detector: MetalDetector       = $CanvasLayer/MetalDetector
 @onready var xray: XRay                          = $CanvasLayer/XRay
@@ -20,6 +22,12 @@ var interrogation_result: InterrogationResultData
 var metal_detector_used: bool
 var xray_used: bool
 var chemical_detector_used: bool
+
+func _ready() -> void:
+	DialogueManager.reset()
+	DialogueManager.load_dialogues(DialogueManager.DialogueType.CONVERSATION, "test")
+	_set_text_box()
+	timer.start(3.0)
 
 func setup(character_data: CharacterData, package_data: PackageData, notice_data: NoticeData):
 	interrogation_result = InterrogationResultData.new()
@@ -51,6 +59,10 @@ func _on_document_received(approved: bool) -> void:
 	interrogation_result.outcome = ReportManager.interrogation_outcome(approved, package.get_has_contraband())
 	interrogation_complete.emit(interrogation_result)
 
+func _set_text_box() -> void:
+	var line: String = DialogueManager.get_line()
+	text_box.set_text(line)
+
 func _on_metal_detector_used() -> void:
 	interrogation_result.metal_detector_used = true
 
@@ -59,3 +71,11 @@ func _on_xray_used() -> void:
 
 func _on_chemical_detector_used() -> void:
 	interrogation_result.chemical_detector_used = true
+
+func _on_timer_timeout() -> void:
+	if DialogueManager.is_finished():
+		text_box.hide_text_box()
+		timer.stop()
+	else:
+		DialogueManager.next_line()
+		_set_text_box()

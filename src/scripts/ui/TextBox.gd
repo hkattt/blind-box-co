@@ -7,7 +7,7 @@ const CHARACTER_READ_RATE: float = 0.05
 @onready var tween: Tween = create_tween()
 
 func hide_text_box() -> void:
-	text.text         = ""
+	text.text = ""
 	hide()
 	
 func show_text_box() -> void:

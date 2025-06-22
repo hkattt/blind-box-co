@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bfv8cebd0myqu"]
+[gd_scene load_steps=13 format=3 uid="uid://bfv8cebd0myqu"]
 
 [ext_resource type="Script" uid="uid://djj2ipq26moa3" path="res://scripts/screens/Interrogation.gd" id="1_wma2k"]
 [ext_resource type="Texture2D" uid="uid://jrh60sn505vr" path="res://assets/images/room/background.png" id="2_h2rq0"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b8ur8ferrlsl2" path="res://scenes/items/MetalDetector.tscn" id="9_7h7p4"]
 [ext_resource type="PackedScene" uid="uid://ccamphyahfrj5" path="res://scenes/items/XRay.tscn" id="10_padvj"]
 [ext_resource type="PackedScene" uid="uid://c7ewqmgpvho65" path="res://scenes/items/ChemicalDetector.tscn" id="11_m6uql"]
+[ext_resource type="PackedScene" uid="uid://dhb613xyuf8nh" path="res://scenes/ui/TextBox.tscn" id="12_vcnfg"]
 
 [node name="Interrogation" type="Node2D"]
 script = ExtResource("1_wma2k")
@@ -55,7 +56,15 @@ offset_bottom = 102.0
 [node name="Notice" parent="." instance=ExtResource("5_vuct2")]
 position = Vector2(287, 47)
 
+[node name="Timer" type="Timer" parent="."]
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextBox" parent="CanvasLayer" instance=ExtResource("12_vcnfg")]
+offset_left = 119.0
+offset_top = 94.0
+offset_right = 130.0
+offset_bottom = 122.0
 
 [node name="Document" parent="CanvasLayer" instance=ExtResource("8_8nhuy")]
 position = Vector2(117, 150)
@@ -77,3 +86,4 @@ position = Vector2(238, 148)
 position = Vector2(302, 146)
 
 [connection signal="pressed" from="Approve Button" to="." method="_on_approve_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
