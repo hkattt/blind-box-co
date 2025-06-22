@@ -7,6 +7,7 @@ enum Sound {
 	METAL_DETECTOR,
 	CRUNCH_PAPER,
 	SCAN,
+	LOADING,
 	CORRECT,
 	INCORRECT,
 	DIALOGUE1,
@@ -25,6 +26,7 @@ enum Sound {
 @onready var metal_detector_sound: AudioStream = preload("res://assets/sfx/metal-detector.mp3")
 @onready var crunch_paper: AudioStream         = preload("res://assets/sfx/crunch-paper.mp3")
 @onready var scan_sound: AudioStream           = preload("res://assets/sfx/scan.mp3")
+@onready var loading_sound: AudioStream        = preload("res://assets/sfx/loading.mp3")
 @onready var correct_sound: AudioStream        = preload("res://assets/sfx/correct.mp3")
 @onready var incorrect_sound: AudioStream      = preload("res://assets/sfx/incorrect.mp3")
 @onready var dialogue1_sound: AudioStream      = preload("res://assets/sfx/dialogue-1.mp3")
@@ -41,6 +43,7 @@ enum Sound {
 	Sound.METAL_DETECTOR: metal_detector_sound,
 	Sound.CRUNCH_PAPER:   crunch_paper,
 	Sound.SCAN:           scan_sound,
+	Sound.LOADING:        loading_sound,
 	Sound.CORRECT:        correct_sound,
 	Sound.INCORRECT:      incorrect_sound,
 	Sound.DIALOGUE1:      dialogue1_sound,

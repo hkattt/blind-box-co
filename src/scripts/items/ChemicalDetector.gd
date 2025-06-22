@@ -66,7 +66,7 @@ func _update_from_state() -> void:
 			animated_sprite.animation = "Rest"
 		ChemicalDetectorState.LOADING:
 			animated_sprite.animation = "Loading"
-			SoundManager.play_sound(SoundManager.Sound.SCAN)
+			SoundManager.play_sound(SoundManager.Sound.LOADING)
 		ChemicalDetectorState.SAFE:
 			animated_sprite.animation = "Safe"
 			SoundManager.play_sound(SoundManager.Sound.CORRECT)
