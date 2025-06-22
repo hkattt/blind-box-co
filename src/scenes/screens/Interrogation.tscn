@@ -60,22 +60,28 @@ position = Vector2(287, 47)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Document" parent="CanvasLayer" instance=ExtResource("8_8nhuy")]
+visible = false
 position = Vector2(117, 150)
 
 [node name="StampApprove" parent="CanvasLayer" instance=ExtResource("7_djaj8")]
+visible = false
 position = Vector2(25, 151)
 
 [node name="StampDecline" parent="CanvasLayer" instance=ExtResource("7_djaj8")]
+visible = false
 position = Vector2(63, 151)
 type = 1
 
 [node name="MetalDetector" parent="CanvasLayer" instance=ExtResource("9_7h7p4")]
+visible = false
 position = Vector2(171, 146)
 
 [node name="XRay" parent="CanvasLayer" instance=ExtResource("10_padvj")]
+visible = false
 position = Vector2(238, 148)
 
 [node name="ChemicalDetector" parent="CanvasLayer" instance=ExtResource("11_m6uql")]
+visible = false
 position = Vector2(302, 146)
 
 [node name="TextBox" parent="CanvasLayer" instance=ExtResource("12_vcnfg")]

@@ -7,6 +7,8 @@ signal interrogation_complete(result: InterrogationResultData)
 @onready var notice: Notice                      = $Notice
 @onready var text_box: TextBox                   = $CanvasLayer/TextBox
 @onready var next_button: NextButton             = $CanvasLayer/NextButton
+@onready var stamp_approve: Stamp                = $CanvasLayer/StampApprove
+@onready var stamp_decline: Stamp                = $CanvasLayer/StampDecline
 @onready var document: Document                  = $CanvasLayer/Document
 @onready var metal_detector: MetalDetector       = $CanvasLayer/MetalDetector
 @onready var xray: XRay                          = $CanvasLayer/XRay
@@ -74,6 +76,12 @@ func _on_chemical_detector_used() -> void:
 
 func _on_texture_button_pressed() -> void:
 	if DialogueManager.is_finished():
+		stamp_approve.show()
+		stamp_decline.show()
+		document.show()
+		metal_detector.show()
+		xray.show()
+		chemical_detector.show()
 		text_box.hide_text_box()
 		next_button.hide()
 	else:
