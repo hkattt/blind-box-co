@@ -23,6 +23,7 @@ horizontal_alignment = 1
 [node name="Text" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Text"
+autowrap_mode = 3
 
 [node name="Timer" type="Timer" parent="."]
 

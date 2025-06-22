@@ -1,0 +1,17 @@
+{
+  "type": "conversation",
+  "lines": [
+	{
+	  "speaker": "Boss",
+	  "line": "Those were some tricky ones."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "A toy gun looks a lot worse in a x-ray."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Bringing a jar of undiscolsed material is unacceptable."
+	}
+  ]
+}

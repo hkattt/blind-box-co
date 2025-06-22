@@ -2,22 +2,27 @@ class_name DailyReport extends Node2D
 
 signal report_close()
 
-@onready var report: Report    = $Report
-@onready var text_box: TextBox = $MarginContainer/TextBox
+@onready var report: Report          = $Report
+@onready var text_box: TextBox       = $MarginContainer/TextBox
+@onready var next_button: NextButton = $NextDialogueButton
 
 const daily_report_scene: PackedScene = preload("res://scenes/screens/DailyReport.tscn")
 
 var results: Array[InterrogationResultData]
+var day: int
 
-static func create(p_results: Array[InterrogationResultData]) -> DailyReport:
+static func create(p_results: Array[InterrogationResultData], p_day: int) -> DailyReport:
 	var daily_report: DailyReport = daily_report_scene.instantiate()
 	daily_report.results = p_results
+	daily_report.day = p_day
 	return daily_report
 	
 func _ready() -> void:	
-	DialogueManager.load_dialogues(DialogueManager.DialogueType.EXPOSITION, "day1-report")
+	DialogueManager.reset()
+	DialogueManager.load_dialogues(DialogueManager.DialogueType.EXPOSITION, "day{day}-report".format({"day": day}))
 	text_box.set_dialogue_sound(SoundManager.Sound.DIALOGUE2)
 	text_box.set_speaker("Boss")
+	_set_text_box()
 	var report_item_header: ReportItemHeader = ReportItemHeader.create()
 	var report_items: Array[ReportItem] = _create_report_items()
 	var detector_item_header: DetectorItemHeader = DetectorItemHeader.create()
@@ -84,7 +89,7 @@ func _on_next_day_button_pressed() -> void:
 
 func _on_next_dialogue_button_pressed() -> void:
 	if DialogueManager.is_finished():
-		pass
+		next_button.hide()
 	else:
 		DialogueManager.next_line()
 		_set_text_box()

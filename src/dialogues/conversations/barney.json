@@ -2,20 +2,12 @@
   "type": "conversation",
   "lines": [
 	{
-	  "speaker": "Theorore",
-	  "line": "I heard perfumes can be expensive"
+	  "speaker": "Barney",
+	  "line": "Heeeeeh haayy matey!"
 	},
 	{
-	  "speaker": "Dave",
-	  "line": "I am crazy dave"
+	  "speaker": "Barney",
+	  "line": "Help me send these old toys to the children's hospital."
 	},
-	{
-	  "speaker": "Theorore",
-	  "line": "Dave, you cannot appreciate my brilliance"
-	},
-	{
-	  "speaker": "Dave",
-	  "line": "I am crazy DAVVVEEEEE!!!!!!!"
-	}
   ]
 }

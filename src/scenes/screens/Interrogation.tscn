@@ -80,7 +80,7 @@ position = Vector2(302, 146)
 
 [node name="TextBox" parent="CanvasLayer" instance=ExtResource("12_vcnfg")]
 offset_left = 2.0
-offset_top = 121.0
+offset_top = 122.0
 offset_right = 318.0
 offset_bottom = 178.0
 

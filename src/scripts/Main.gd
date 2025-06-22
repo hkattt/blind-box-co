@@ -78,7 +78,7 @@ func _change_screen() -> void:
 			DayManager.start_day(day_data, screen_transition)
 			DayManager.day_complete.connect(_on_day_complete, CONNECT_ONE_SHOT)
 		GameScreen.REPORT:
-			daily_report = DailyReport.create(interrogation_results)
+			daily_report = DailyReport.create(interrogation_results, current_day_index + 1)
 			daily_report.report_close.connect(_on_report_close, CONNECT_ONE_SHOT)
 			get_tree().current_scene.add_child(daily_report)
 		GameScreen.HIRED:

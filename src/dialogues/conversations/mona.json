@@ -2,20 +2,12 @@
   "type": "conversation",
   "lines": [
 	{
-	  "speaker": "Theorore",
-	  "line": "I heard perfumes can be expensive"
+	  "speaker": "Mona",
+	  "line": "Hey there! I am hoping to send some art supplies to a friend."
 	},
 	{
-	  "speaker": "Dave",
-	  "line": "I am crazy dave"
+	  "speaker": "Mona",
+	  "line": "Sorry if the paint triggers any of your detectors!"
 	},
-	{
-	  "speaker": "Theorore",
-	  "line": "Dave, you cannot appreciate my brilliance"
-	},
-	{
-	  "speaker": "Dave",
-	  "line": "I am crazy DAVVVEEEEE!!!!!!!"
-	}
   ]
 }

@@ -2,20 +2,16 @@
   "type": "conversation",
   "lines": [
 	{
-	  "speaker": "Theorore",
-	  "line": "I heard perfumes can be expensive"
+	  "speaker": "Kyle",
+	  "line": "Whatup bro! Those are some sick scanners you got there."
 	},
 	{
-	  "speaker": "Dave",
-	  "line": "I am crazy dave"
+	  "speaker": "Kyle",
+	  "line": "IS THAT AN X-RAY SCANNER? Bro try it on my hands!"
 	},
 	{
-	  "speaker": "Theorore",
-	  "line": "Dave, you cannot appreciate my brilliance"
+	  "speaker": "Kyle",
+	  "line": "Kidding! Anyways bro, help me send this teddy bear to my GF."
 	},
-	{
-	  "speaker": "Dave",
-	  "line": "I am crazy DAVVVEEEEE!!!!!!!"
-	}
   ]
 }

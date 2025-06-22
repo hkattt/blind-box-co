@@ -3,19 +3,43 @@
   "lines": [
 	{
 	  "speaker": "Boss",
-	  "line": "Helloooooo and welcome"
+	  "line": "Hello and welcome to your 3-day job trial at Blind Box. Co."
 	},
 	{
 	  "speaker": "Boss",
-	  "line": "Welcome to the three-day trial program"
+	  "line": "The purpose of this trial is to determine if you are suitable for the position."
 	},
 	{
 	  "speaker": "Boss",
-	  "line": "You are what? 18? Can't get a job huh?"
+	  "line": "If you earn enough money during the trial period, we will offer you a full-time position."
 	},
 	{
 	  "speaker": "Boss",
-	  "line": "More lines"
-	}
+	  "line": "As I am sure you know, Blind Box. Co. is a postage service with a strict no-package opening policy."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Due to this, we get some strange characters trying to send all types of contraband."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Your job is simple: approve legal packages and decline packages that contain contraband."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Our metal detector, x-ray scanner, and chemical detector are at your disposale."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "But be warned, those devices are not cheap and each use will cost you."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Also remember, the detectors do not tell the full story. Keep your wits about you."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Good luck."
+	},
   ]
 }

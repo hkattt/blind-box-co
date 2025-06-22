@@ -1,0 +1,21 @@
+{
+  "type": "conversation",
+  "lines": [
+	{
+	  "speaker": "Boss",
+	  "line": "You have completed your final day."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Thank you for completing the trial period."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Those were certainly the most challenging cases yet."
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Based on your results, we will decide your future with this company."
+	}
+  ]
+}
