@@ -9,6 +9,7 @@ enum MetalDetectorState {
 }
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var timer: Timer                      = $Timer
 
 var state: MetalDetectorState = MetalDetectorState.OFF
 
@@ -17,6 +18,7 @@ func _ready() -> void:
 
 func _on_dragable_drag_start() -> void:
 	state = MetalDetectorState.ON
+	SoundManager.play_sound(SoundManager.Sound.POWER_ON)
 	_update_from_state()
 
 func _on_dragable_drag_end() -> void:
@@ -40,9 +42,18 @@ func _update_from_state():
 	match state:
 		MetalDetectorState.OFF:
 			animated_sprite.animation = "Off"
+			SoundManager.stop_sound()
+			timer.stop()
 		MetalDetectorState.ON:
 			animated_sprite.animation = "On"
+			SoundManager.stop_sound()
+			timer.stop()
 		MetalDetectorState.FLASHING:
 			animated_sprite.animation = "Flash"
+			SoundManager.play_sound(SoundManager.Sound.METAL_DETECTOR, 20.0)
+			timer.start(3.0)
 			
 	animated_sprite.play()
+
+func _on_timer_timeout() -> void:
+	SoundManager.play_sound(SoundManager.Sound.METAL_DETECTOR, 20.0)

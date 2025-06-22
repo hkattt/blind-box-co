@@ -1,10 +1,13 @@
-[gd_resource type="Resource" script_class="CharacterData" load_steps=3 format=3 uid="uid://ctbvnt6iwyehn"]
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3 uid="uid://ctbvnt6iwyehn"]
 
 [ext_resource type="Texture2D" uid="uid://vy5e666sb1em" path="res://assets/images/characters/greg.png" id="1_2nlok"]
 [ext_resource type="Script" uid="uid://b11bqs0e38js3" path="res://resources/CharacterData.gd" id="2_idj3h"]
+[ext_resource type="Texture2D" uid="uid://c8b11rfksxc0u" path="res://assets/images/characters/greg-hover.png" id="2_pjkn2"]
 
 [resource]
 script = ExtResource("2_idj3h")
 name = "Greg"
 portrait = ExtResource("1_2nlok")
+portrait_hover = ExtResource("2_pjkn2")
+dialoge_sound = 1
 metadata/_custom_type_script = "uid://b11bqs0e38js3"

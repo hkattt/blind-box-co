@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://coiucso4fpjwe"]
+
+[ext_resource type="Script" uid="uid://bo38h28ufsj7e" path="res://scripts/managers/ReportManager.gd" id="1_a5c5c"]
+
+[node name="ReportManager" type="Node2D"]
+script = ExtResource("1_a5c5c")

@@ -20,8 +20,22 @@ To setup the project locally, simply clone the repository and open the project i
 - [Sheriff of Nottingham](https://www.gamesworld.com.au/product/sheriff-of-nottingham-2nd-edition/)
 
 ## Asset References
-- **pentacom**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=381
 - **DuffsDevice**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=468
+- **Jay_You**. Elevator music. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/Jay_You/sounds/467240/ 
+- **wobesound**. Click SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/wobesound/sounds/488381/
+- **kermite607**. Stamp SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/kermite607/sounds/362622/
+- **vestibule-door**. Metal detector SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/vestibule-door/sounds/668984/
+- **IanStarGem**. Power on SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/IanStarGem/sounds/278205/
+- **LilMati**. Dialogue 1 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453037/
+- **LilMati**. Dialogue 2 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453060/
+- **LilMati**. Dialogue 3 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453087/
+- **LilMati**. Dialogue 4 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453037/
+- **LilMati**. Dialogue 5 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453085/
+- **F.M.Audio**. Crunch paper SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/F.M.Audio/sounds/561733/
+- **pytho0n11**. Scan SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/pyth0n11/sounds/706447/
+- **unadamlar**. Correct SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/unadamlar/sounds/476178/
+- **BaggoNotes**. Incorrect SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/BaggoNotes/sounds/720893/
+- **PeterBluewin**. Morning SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/PeterBluewin/sounds/728551/?
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 

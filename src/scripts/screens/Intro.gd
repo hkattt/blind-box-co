@@ -15,6 +15,7 @@ static func create() -> Intro:
 
 func _ready() -> void:
 	DialogueManager.load_dialogues(DialogueManager.DialogueType.EXPOSITION, "intro")
+	text_box.set_dialogue_sound(SoundManager.Sound.DIALOGUE2)
 	_set_text_box()
 	
 func _set_text_box():

@@ -25,6 +25,7 @@ func _ready() -> void:
 
 func _on_dragable_drag_start() -> void:
 	state = ChemicalDetectorState.DRAGGING
+	SoundManager.play_sound(SoundManager.Sound.POWER_ON)
 	_update_from_state()
 
 func _on_dragable_drag_end() -> void:
@@ -43,8 +44,8 @@ func _on_area_exited(area: Area2D) -> void:
 	if area.is_in_group("Packages"):
 		if (state == ChemicalDetectorState.LOADING):
 			state = ChemicalDetectorState.REST
+			_update_from_state()
 		timer.stop()
-		_update_from_state()
 
 func _on_timer_timeout() -> void:
 	if package.get_has_chemical():
@@ -65,9 +66,12 @@ func _update_from_state() -> void:
 			animated_sprite.animation = "Rest"
 		ChemicalDetectorState.LOADING:
 			animated_sprite.animation = "Loading"
+			SoundManager.play_sound(SoundManager.Sound.SCAN)
 		ChemicalDetectorState.SAFE:
 			animated_sprite.animation = "Safe"
+			SoundManager.play_sound(SoundManager.Sound.CORRECT)
 		ChemicalDetectorState.DANGER:
 			animated_sprite.animation = "Danger"
+			SoundManager.play_sound(SoundManager.Sound.INCORRECT)
 			
 	animated_sprite.play()

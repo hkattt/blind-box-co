@@ -20,3 +20,5 @@ shape = SubResource("CircleShape2D_w0fi6")
 [node name="Dragable" parent="." instance=ExtResource("3_vhlji")]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="drag_end" from="Dragable" to="." method="_on_dragable_drag_end"]
+[connection signal="drag_start" from="Dragable" to="." method="_on_dragable_drag_start"]

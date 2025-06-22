@@ -8,6 +8,10 @@ enum DialogueType {
 	EXPOSITION 
 }
 	
+
+func reset() -> void:
+	dialogue_index = 0 	
+	
 func load_dialogues(type: DialogueType, dialogue_name) -> void:
 	var type_directory = get_dialogue_type_directory(type)
 		

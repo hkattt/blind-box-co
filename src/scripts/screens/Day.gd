@@ -11,6 +11,7 @@ var day_number: int = 1
 
 func _ready() -> void:
 	day_text_label.text = "Day " + str(day_number)
+	SoundManager.play_sound(SoundManager.Sound.MORNING)
 	timer.start(3.0)
 
 static func create(p_day_number: int) -> Day:
@@ -19,4 +20,5 @@ static func create(p_day_number: int) -> Day:
 	return day
 
 func _on_timer_timeout() -> void:
+	SoundManager.stop_sound()
 	day_timer_finished.emit()

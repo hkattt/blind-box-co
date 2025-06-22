@@ -17,9 +17,11 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DayManager="*res://scripts/managers/DayManager.gd"
-DialogueManager="*res://scripts/managers/DialogueManager.gd"
-ReportManager="*res://scripts/managers/ReportManager.gd"
+DayManager="*res://scenes/managers/DayManager.tscn"
+DialogueManager="*res://scenes/managers/DialogueManager.tscn"
+ReportManager="*res://scenes/managers/ReportManager.tscn"
+MusicManager="*res://scenes/managers/MusicManager.tscn"
+SoundManager="*res://scenes/managers/SoundManager.tscn"
 
 [display]
 

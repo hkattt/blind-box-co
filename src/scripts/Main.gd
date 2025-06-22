@@ -27,6 +27,7 @@ var current_day_index: int = 0
 var interrogation_results: Array[InterrogationResultData]
 
 func _ready() -> void:
+	MusicManager.play_music(MusicManager.Music.ELEVATOR)
 	_start_game()
 	
 func _start_game() -> void:
