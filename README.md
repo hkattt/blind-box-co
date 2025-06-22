@@ -38,6 +38,8 @@ To setup the project locally, simply clone the repository and open the project i
 - **unadamlar**. Correct SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/unadamlar/sounds/476178/
 - **BaggoNotes**. Incorrect SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/BaggoNotes/sounds/720893/
 - **PeterBluewin**. Morning SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/PeterBluewin/sounds/728551/?
+- **maxmakessounds**. Victory SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/maxmakessounds/sounds/353546/
+- **Leszek_Szary**. Failure SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/Leszek_Szary/sounds/171672/
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 

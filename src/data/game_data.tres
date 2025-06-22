@@ -8,5 +8,5 @@
 
 [resource]
 script = ExtResource("4_yqv0c")
-days = Array[ExtResource("1_r34r7")]([ExtResource("4_7fe16"), ExtResource("2_k2o1c"), ExtResource("3_r34r7")])
+days = Array[ExtResource("1_r34r7")]([ExtResource("2_k2o1c"), ExtResource("3_r34r7"), ExtResource("4_7fe16")])
 metadata/_custom_type_script = "uid://po8htodqto00"

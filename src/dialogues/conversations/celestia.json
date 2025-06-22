@@ -2,20 +2,16 @@
   "type": "conversation",
   "lines": [
 	{
-	  "speaker": "Theorore",
-	  "line": "I heard perfumes can be expensive"
+	  "speaker": "Celestia",
+	  "line": "Meow there!"
 	},
 	{
-	  "speaker": "Dave",
-	  "line": "I am crazy dave"
+	  "speaker": "Celestia",
+	  "line": "Help me send some of my magical items to a colleague. Meow."
 	},
 	{
-	  "speaker": "Theorore",
-	  "line": "Dave, you cannot appreciate my brilliance"
+	  "speaker": "Celestia",
+	  "line": "Don't fret, they are pawsitively safe. Meow"
 	},
-	{
-	  "speaker": "Dave",
-	  "line": "I am crazy DAVVVEEEEE!!!!!!!"
-	}
   ]
 }

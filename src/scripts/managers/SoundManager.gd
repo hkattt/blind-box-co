@@ -15,7 +15,9 @@ enum Sound {
 	DIALOGUE3,
 	DIALOGUE4,
 	DIALOGUE5,
-	MORNING
+	MORNING,
+	VICTORY,
+	FAILURE
 }
 
 @onready var sound_player: AudioStreamPlayer2D = $SoundPlayer
@@ -35,6 +37,8 @@ enum Sound {
 @onready var dialogue4_sound: AudioStream      = preload("res://assets/sfx/dialogue-4.mp3")
 @onready var dialogue5_sound: AudioStream      = preload("res://assets/sfx/dialogue-5.mp3")
 @onready var morning_sound: AudioStream        = preload("res://assets/sfx/morning.mp3")
+@onready var victory_sound: AudioStream        = preload("res://assets/sfx/victory.mp3")
+@onready var failure_sound: AudioStream        = preload("res://assets/sfx/failure.mp3")
 
 @onready var sounds: Dictionary = {
 	Sound.CLICK:    	  click_sound,
@@ -51,7 +55,9 @@ enum Sound {
 	Sound.DIALOGUE3:      dialogue3_sound,
 	Sound.DIALOGUE4:      dialogue4_sound,
 	Sound.DIALOGUE5:      dialogue5_sound,
-	Sound.MORNING:        morning_sound
+	Sound.MORNING:        morning_sound,
+	Sound.VICTORY:        victory_sound,
+	Sound.FAILURE:        failure_sound
 }
 
 func play_sound(sound: Sound, volume_db: float = 0.0) -> void:

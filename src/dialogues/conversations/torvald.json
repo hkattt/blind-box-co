@@ -2,20 +2,16 @@
   "type": "conversation",
   "lines": [
 	{
-	  "speaker": "Theorore",
-	  "line": "I heard perfumes can be expensive"
+	  "speaker": "Torvald",
+	  "line": "G-g-good evening sir..."
 	},
 	{
-	  "speaker": "Dave",
-	  "line": "I am crazy dave"
+	  "speaker": "Torvald",
+	  "line": "Just sending over a prototype I've been worked on."
 	},
 	{
-	  "speaker": "Theorore",
-	  "line": "Dave, you cannot appreciate my brilliance"
+	  "speaker": "Torvald",
+	  "line": "You might see some wires, batties, and stuff."
 	},
-	{
-	  "speaker": "Dave",
-	  "line": "I am crazy DAVVVEEEEE!!!!!!!"
-	}
   ]
 }

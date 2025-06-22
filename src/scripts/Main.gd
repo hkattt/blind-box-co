@@ -16,7 +16,7 @@ const game_data: GameData = preload("res://data/game_data.tres")
 
 const HIRED_EARNINGS: int = 50
 
-var game_screen: GameScreen = GameScreen.INTERROGATION
+var game_screen: GameScreen = GameScreen.MAIN_MENU
 var main_menu: MainMenu
 var intro: Intro = null
 var daily_report: DailyReport = null
@@ -33,6 +33,11 @@ func _ready() -> void:
 	
 func _start_game() -> void:
 	await _change_screen()
+	
+func _reset():
+	current_day_index = 0
+	interrogation_results = []
+	ReportManager.reset_total()
 
 func _get_next_screen() -> GameScreen:
 	match game_screen:
@@ -68,6 +73,10 @@ func _change_screen() -> void:
 		day.queue_free()
 	if daily_report:
 		daily_report.queue_free()
+	if hired:
+		hired.queue_free()
+	if rejected:
+		rejected.queue_free()
 	
 	match game_screen:
 		GameScreen.MAIN_MENU:
@@ -92,9 +101,11 @@ func _change_screen() -> void:
 			get_tree().current_scene.add_child(daily_report)
 		GameScreen.HIRED:
 			hired = Hired.create()
+			hired.hired_complete.connect(_on_hired_rejected_complete, CONNECT_ONE_SHOT)
 			get_tree().current_scene.add_child(hired)
 		GameScreen.REJECTED:
 			rejected = Rejected.create()
+			rejected.rejected_complete.connect(_on_hired_rejected_complete, CONNECT_ONE_SHOT)
 			get_tree().current_scene.add_child(rejected)
 	
 	await screen_transition.fade_in()
@@ -119,4 +130,10 @@ func _on_day_complete(results: Array[InterrogationResultData]) -> void:
 	
 func _on_report_close() -> void:
 	game_screen = _get_next_screen()
+	await _change_screen()
+	
+func _on_hired_rejected_complete() -> void:
+	print("Hello")
+	game_screen = _get_next_screen()
+	_reset()
 	await _change_screen()

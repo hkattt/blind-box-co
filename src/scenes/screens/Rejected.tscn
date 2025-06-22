@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://osj66tb007iy"]
+[gd_scene load_steps=4 format=3 uid="uid://osj66tb007iy"]
 
 [ext_resource type="Script" uid="uid://dp2a5pgwjgkkw" path="res://scripts/screens/Rejected.gd" id="1_1ulsm"]
 [ext_resource type="Texture2D" uid="uid://dhrjvtnqftxfw" path="res://assets/images/report/report-background.png" id="1_ru4vu"]
+[ext_resource type="PackedScene" uid="uid://6hxv0okwf1yn" path="res://scenes/ui/NextButton.tscn" id="3_wuajh"]
 
 [node name="Rejected" type="Node2D"]
 script = ExtResource("1_1ulsm")
@@ -19,4 +20,22 @@ offset_bottom = 180.0
 texture_filter = 3
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "Rejected"
+text = "Rejected
+Your performance did not
+meet our expectations"
+horizontal_alignment = 1
+
+[node name="TextureButton" parent="." instance=ExtResource("3_wuajh")]
+offset_left = 311.0
+offset_top = 6.0
+offset_right = 316.0
+offset_bottom = 11.0
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 3
+offset_left = 265.0
+offset_right = 309.0
+offset_bottom = 13.0
+text = "Main Menu"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
