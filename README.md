@@ -1,10 +1,24 @@
 # Godot Wild Jam 82
 
 ## Overview
-** INSERT GAME NAME ** was made using Godot 4.4.1 and GDScript for the [Godot Wild Jam 82](https://itch.io/jam/godot-wild-jam-82). The theme of the game jam was was `UNSEEN`. We also included the  following wildcards:
-- `Immersive`: Have your UI be part of the world.
-- `Boom`: There must be at least one explosion in the game.
+Blind Box.Co was made using Godot 4.4.1 and GDScript for the [Godot Wild Jam 82](https://itch.io/jam/godot-wild-jam-82). The theme of the game jam was was `UNSEEN`. We also included the  following wildcard:
 - `Report Card`: Grade something the player does.
+
+Blind Box.Co is a puzzle simulation game. You work at a postage service that has a strict no-package opening policy. Consequently, you must use your wits and various detectors to determine if customers are attempting to smuggle contraband. 
+
+## Controls
+
+The game is fully controlled using the mouse. 
+
+- **Stamps**: Click and drag over document to sign.
+
+- **Document**: Click and drag to character to submit.
+
+- **Metal Detector**: Click and drag over the package. Beeps once metal is detected.
+
+- **X-Ray**: Click and drag over the package. Reveals package contents.
+
+- **Chemical Detecto**r. Click and drag over the package. Loads and shows result.
 
 ## Dependencies
 
