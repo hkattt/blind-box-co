@@ -5,21 +5,22 @@
 [node name="ReportItem" type="HBoxContainer"]
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_constants/separation = 25
 script = ExtResource("1_6task")
 
 [node name="CustomerName" type="Label" parent="."]
 texture_filter = 3
+custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
-text = "Customer Name"
+text = "Name"
 
 [node name="Result" type="Label" parent="."]
 texture_filter = 3
-custom_minimum_size = Vector2(50, 0)
+custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Result"
 
 [node name="Profit" type="Label" parent="."]
 texture_filter = 3
 layout_mode = 2
+theme_override_colors/font_color = Color(0.47451, 0.635294, 0.462745, 1)
 text = "Profit"

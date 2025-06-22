@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://6hxv0okwf1yn"]
+
+[ext_resource type="Texture2D" uid="uid://t8132ukgid8d" path="res://assets/images/ui/next-green.png" id="1_bohef"]
+[ext_resource type="Texture2D" uid="uid://bdiep8e0cqcjb" path="res://assets/images/ui/next-pink.png" id="2_nrl3w"]
+
+[node name="TextureButton" type="TextureButton"]
+texture_filter = 3
+offset_right = 5.0
+offset_bottom = 5.0
+texture_normal = ExtResource("1_bohef")
+texture_pressed = ExtResource("2_nrl3w")
+texture_hover = ExtResource("2_nrl3w")

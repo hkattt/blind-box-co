@@ -15,4 +15,4 @@ layout_mode = 2
 [node name="Label" type="Label" parent="MarginContainer"]
 texture_filter = 3
 layout_mode = 2
-text = "Testttttttttttt"
+text = "Testtttttttttttttttt"

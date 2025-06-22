@@ -35,6 +35,9 @@ func get_speaker() -> String:
 func get_line() -> String:
 	return dialogue_lines[dialogue_index]["line"]
 	
+func is_finished() -> bool:
+	return dialogue_index == dialogue_lines.size() - 1
+	
 func get_dialogue_type_directory(type: DialogueType) -> String:
 	match type:
 		DialogueType.CONVERSATION:

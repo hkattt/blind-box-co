@@ -13,6 +13,8 @@ var total_cost: int
 func _ready() -> void:
 	detector_name_label.text = detector_name
 	uses_label.text = str(number_of_uses)
+	if (total_cost > 0):
+		total_label.add_theme_color_override("font_color", "#9F76A2")
 	total_label.text = str(total_cost)
 
 static func create(p_detector_name: String, p_number_of_uses: int, p_total_cost: int) -> DetectorItem:

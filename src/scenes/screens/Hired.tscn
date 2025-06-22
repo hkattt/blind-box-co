@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh15eiv3b551p"]
+
+[ext_resource type="Script" uid="uid://chto426fy4cqv" path="res://scripts/screens/Hired.gd" id="1_6faut"]
+[ext_resource type="Texture2D" uid="uid://dhrjvtnqftxfw" path="res://assets/images/report/report-background.png" id="1_gejx5"]
+
+[node name="Hired" type="Node2D"]
+script = ExtResource("1_6faut")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(160, 90)
+texture = ExtResource("1_gejx5")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+texture_filter = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Hired"

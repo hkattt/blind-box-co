@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctde0orfbn8ww"]
+
+[ext_resource type="Texture2D" uid="uid://dhrjvtnqftxfw" path="res://assets/images/report/report-background.png" id="1_45dpb"]
+[ext_resource type="Script" uid="uid://bl1jjln42o557" path="res://scripts/screens/Intro.gd" id="1_aqbct"]
+[ext_resource type="PackedScene" uid="uid://dhb613xyuf8nh" path="res://scenes/ui/TextBox.tscn" id="2_hc7eg"]
+[ext_resource type="Texture2D" uid="uid://c2gac6r3htbeu" path="res://assets/images/characters/boss.png" id="3_ywiat"]
+[ext_resource type="PackedScene" uid="uid://6hxv0okwf1yn" path="res://scenes/ui/NextButton.tscn" id="5_mkji7"]
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_aqbct")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(160, 90)
+texture = ExtResource("1_45dpb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(159, 52)
+texture = ExtResource("3_ywiat")
+
+[node name="TextBox" parent="." instance=ExtResource("2_hc7eg")]
+offset_left = 7.0
+offset_top = 102.0
+offset_right = 311.0
+offset_bottom = 175.0
+
+[node name="NextButton" parent="." instance=ExtResource("5_mkji7")]
+offset_left = 304.0
+offset_top = 166.0
+offset_right = 309.0
+offset_bottom = 171.0
+
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]
