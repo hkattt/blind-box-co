@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 DayManager="*res://scripts/managers/DayManager.gd"
-GameManager="*res://scripts/managers/GameManager.gd"
 DialogueManager="*res://scripts/managers/DialogueManager.gd"
 ReportManager="*res://scripts/managers/ReportManager.gd"
 

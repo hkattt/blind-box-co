@@ -10,6 +10,8 @@ enum GameScreen {
 	REJECTED
 }
 
+@onready var screen_transition = $ScreenTransition
+
 const game_data: GameData = preload("res://data/game_data.tres")
 
 const HIRED_EARNINGS: int = 50

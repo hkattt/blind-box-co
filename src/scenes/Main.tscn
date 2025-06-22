@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwdb0rahcukks"]
+[gd_scene load_steps=3 format=3 uid="uid://dwdb0rahcukks"]
 
 [ext_resource type="Script" uid="uid://c8ashy84ejyno" path="res://scripts/Main.gd" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://cswiietm7ymbg" path="res://scenes/components/ScreenTransition.tscn" id="2_rvslj"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_elqb8")
+
+[node name="ScreenTransition" parent="." instance=ExtResource("2_rvslj")]
