@@ -35,6 +35,7 @@ To setup the project locally, simply clone the repository and open the project i
 - **pytho0n11**. Scan SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/pyth0n11/sounds/706447/
 - **unadamlar**. Correct SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/unadamlar/sounds/476178/
 - **BaggoNotes**. Incorrect SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/BaggoNotes/sounds/720893/
+- **PeterBluewin**. Morning SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/PeterBluewin/sounds/728551/?
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 

@@ -25,6 +25,20 @@ var metal_detector_used: bool
 var xray_used: bool
 var chemical_detector_used: bool
 
+func _ready() -> void:
+	stamp_approve.hide()
+	stamp_approve.process_mode = Node.PROCESS_MODE_DISABLED
+	stamp_decline.hide()
+	stamp_decline.process_mode = Node.PROCESS_MODE_DISABLED
+	document.hide()
+	document.process_mode = Node.PROCESS_MODE_DISABLED
+	metal_detector.hide()
+	metal_detector.process_mode = Node.PROCESS_MODE_DISABLED
+	xray.hide()
+	xray.process_mode = Node.PROCESS_MODE_DISABLED
+	chemical_detector.hide()
+	chemical_detector.process_mode = Node.PROCESS_MODE_DISABLED
+
 func setup(character_data: CharacterData, package_data: PackageData, notice_data: NoticeData):
 	interrogation_result = InterrogationResultData.new()
 	interrogation_result.customer_name = character_data.name
@@ -77,13 +91,21 @@ func _on_chemical_detector_used() -> void:
 func _on_texture_button_pressed() -> void:
 	if DialogueManager.is_finished():
 		stamp_approve.show()
+		stamp_approve.process_mode = Node.PROCESS_MODE_INHERIT
 		stamp_decline.show()
+		stamp_decline.process_mode = Node.PROCESS_MODE_INHERIT
 		document.show()
+		document.process_mode = Node.PROCESS_MODE_INHERIT
 		metal_detector.show()
+		metal_detector.process_mode = Node.PROCESS_MODE_INHERIT
 		xray.show()
+		xray.process_mode = Node.PROCESS_MODE_INHERIT
 		chemical_detector.show()
+		chemical_detector.process_mode = Node.PROCESS_MODE_INHERIT
 		text_box.hide_text_box()
+		text_box.process_mode = Node.PROCESS_MODE_INHERIT
 		next_button.hide()
+		next_button.process_mode = Node.PROCESS_MODE_INHERIT
 	else:
 		DialogueManager.next_line()
 		_set_text_box()
