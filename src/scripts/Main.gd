@@ -16,7 +16,7 @@ const game_data: GameData = preload("res://data/game_data.tres")
 
 const HIRED_EARNINGS: int = 50
 
-var game_screen: GameScreen = GameScreen.MAIN_MENU
+var game_screen: GameScreen = GameScreen.INTERROGATION
 var main_menu: MainMenu
 var intro: Intro = null
 var daily_report: DailyReport = null
