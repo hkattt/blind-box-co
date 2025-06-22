@@ -19,4 +19,4 @@ texture = ExtResource("1_mqk1k")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_k3ddq")
 
-[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="drag_start" from="Dragable" to="." method="_on_dragable_drag_start"]

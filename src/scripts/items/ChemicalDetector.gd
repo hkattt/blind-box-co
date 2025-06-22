@@ -25,6 +25,7 @@ func _ready() -> void:
 
 func _on_dragable_drag_start() -> void:
 	state = ChemicalDetectorState.DRAGGING
+	SoundManager.play_sound(SoundManager.Sound.POWER_ON)
 	_update_from_state()
 
 func _on_dragable_drag_end() -> void:

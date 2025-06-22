@@ -20,8 +20,12 @@ To setup the project locally, simply clone the repository and open the project i
 - [Sheriff of Nottingham](https://www.gamesworld.com.au/product/sheriff-of-nottingham-2nd-edition/)
 
 ## Asset References
-- **pentacom**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=381
 - **DuffsDevice**. Game font. Retrieved from: https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=468
+- **Jay_You**. Elevator music. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/Jay_You/sounds/467240/ 
+- **wobesound**. Click SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/wobesound/sounds/488381/
+- **kermite607**. Stamp SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/kermite607/sounds/362622/
+- **vestibule-door**. Metal detector SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/vestibule-door/sounds/668984/
+- **IanStarGem**. Power on SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/IanStarGem/sounds/278205/
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 

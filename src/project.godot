@@ -20,6 +20,8 @@ config/icon="res://icon.svg"
 DayManager="*res://scenes/managers/DayManager.tscn"
 DialogueManager="*res://scenes/managers/DialogueManager.tscn"
 ReportManager="*res://scenes/managers/ReportManager.tscn"
+MusicManager="*res://scenes/managers/MusicManager.tscn"
+SoundManager="*res://scenes/managers/SoundManager.tscn"
 
 [display]
 
