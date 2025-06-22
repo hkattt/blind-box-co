@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://osj66tb007iy"]
+
+[ext_resource type="Script" uid="uid://dp2a5pgwjgkkw" path="res://scripts/screens/Rejected.gd" id="1_1ulsm"]
+[ext_resource type="Texture2D" uid="uid://dhrjvtnqftxfw" path="res://assets/images/report/report-background.png" id="1_ru4vu"]
+
+[node name="Rejected" type="Node2D"]
+script = ExtResource("1_1ulsm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(160, 90)
+texture = ExtResource("1_ru4vu")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+texture_filter = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Rejected"

@@ -4,7 +4,7 @@ signal report_close()
 
 @onready var report: Report = $Report
 
-const daily_report_scene: PackedScene = preload("res://scenes/DailyReport.tscn")
+const daily_report_scene: PackedScene = preload("res://scenes/screens/DailyReport.tscn")
 
 var results: Array[InterrogationResultData]
 

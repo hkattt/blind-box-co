@@ -2,7 +2,7 @@ extends Node
 
 signal day_complete(results: InterrogationResultData)
 
-var interrogation_scene: PackedScene = preload("res://scenes/Interrogation.tscn")
+var interrogation_scene: PackedScene = preload("res://scenes/screens/Interrogation.tscn")
 
 var current_interrogation: Node2D = null
 var interrogation_queue: Array[InterrogationData] = []

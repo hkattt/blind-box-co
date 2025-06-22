@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bm40x15femq4o"]
 
 [ext_resource type="PackedScene" uid="uid://b4beiylu6djyt" path="res://scenes/ui/Report/Report.tscn" id="1_s5cpj"]
-[ext_resource type="Script" uid="uid://bnqgoaaliqf2f" path="res://scripts/DailyReport.gd" id="1_u4qgu"]
+[ext_resource type="Script" uid="uid://bnqgoaaliqf2f" path="res://scripts/screens/DailyReport.gd" id="1_u4qgu"]
 [ext_resource type="Texture2D" uid="uid://c2gac6r3htbeu" path="res://assets/images/characters/boss.png" id="2_j275w"]
 [ext_resource type="Texture2D" uid="uid://dhrjvtnqftxfw" path="res://assets/images/report/report-background.png" id="2_kohja"]
 [ext_resource type="Texture2D" uid="uid://ptxtx4hnduul" path="res://assets/images/ui/next-day-text.png" id="5_4ajr4"]

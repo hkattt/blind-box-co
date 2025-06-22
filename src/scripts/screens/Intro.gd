@@ -4,7 +4,7 @@ signal intro_complete
 
 @onready var text_box: TextBox = $TextBox
 
-const intro_scene: PackedScene = preload("res://scenes/Intro.tscn")
+const intro_scene: PackedScene = preload("res://scenes/screens/Intro.tscn")
 
 var speaker: String 
 var line: String
