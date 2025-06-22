@@ -19,6 +19,7 @@ static func create(p_results: Array[InterrogationResultData], p_day: int) -> Dai
 	
 func _ready() -> void:	
 	DialogueManager.reset()
+	print(day)
 	DialogueManager.load_dialogues(DialogueManager.DialogueType.EXPOSITION, "day{day}-report".format({"day": day}))
 	text_box.set_dialogue_sound(SoundManager.Sound.DIALOGUE2)
 	text_box.set_speaker("Boss")

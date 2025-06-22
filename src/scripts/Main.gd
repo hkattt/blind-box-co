@@ -16,7 +16,8 @@ const game_data: GameData = preload("res://data/game_data.tres")
 
 const HIRED_EARNINGS: int = 50
 
-var game_screen: GameScreen = GameScreen.INTRO
+var game_screen: GameScreen = GameScreen.MAIN_MENU
+var main_menu: MainMenu
 var intro: Intro = null
 var daily_report: DailyReport = null
 var day: Day = null
@@ -35,6 +36,8 @@ func _start_game() -> void:
 
 func _get_next_screen() -> GameScreen:
 	match game_screen:
+		GameScreen.MAIN_MENU:
+			return GameScreen.INTRO
 		GameScreen.INTRO:
 			return GameScreen.DAY
 		GameScreen.DAY:
@@ -57,6 +60,8 @@ func _get_next_screen() -> GameScreen:
 func _change_screen() -> void:
 	await screen_transition.fade_out()
 	
+	if main_menu:
+		main_menu.queue_free()
 	if intro:
 		intro.queue_free()
 	if day:
@@ -65,6 +70,10 @@ func _change_screen() -> void:
 		daily_report.queue_free()
 	
 	match game_screen:
+		GameScreen.MAIN_MENU:
+			main_menu = MainMenu.create()
+			main_menu.main_menu_complete.connect(_on_main_menu_complete, CONNECT_ONE_SHOT)
+			get_tree().current_scene.add_child(main_menu)
 		GameScreen.INTRO:
 			intro = Intro.create()
 			intro.intro_complete.connect(_on_intro_complete, CONNECT_ONE_SHOT)
@@ -78,7 +87,7 @@ func _change_screen() -> void:
 			DayManager.start_day(day_data, screen_transition)
 			DayManager.day_complete.connect(_on_day_complete, CONNECT_ONE_SHOT)
 		GameScreen.REPORT:
-			daily_report = DailyReport.create(interrogation_results, current_day_index + 1)
+			daily_report = DailyReport.create(interrogation_results, current_day_index)
 			daily_report.report_close.connect(_on_report_close, CONNECT_ONE_SHOT)
 			get_tree().current_scene.add_child(daily_report)
 		GameScreen.HIRED:
@@ -89,6 +98,10 @@ func _change_screen() -> void:
 			get_tree().current_scene.add_child(rejected)
 	
 	await screen_transition.fade_in()
+
+func _on_main_menu_complete() -> void:
+	game_screen = _get_next_screen()
+	await _change_screen()
 
 func _on_intro_complete() -> void:
 	game_screen = _get_next_screen()
