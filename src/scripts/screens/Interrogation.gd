@@ -5,8 +5,8 @@ signal interrogation_complete(result: InterrogationResultData)
 @onready var character_slot: Control             = $CharacterSlot
 @onready var package_slot: Control               = $PackageSlot
 @onready var notice: Notice                      = $Notice
-@onready var timer: Timer                        = $Timer
 @onready var text_box: TextBox                   = $CanvasLayer/TextBox
+@onready var next_button: NextButton             = $CanvasLayer/NextButton
 @onready var document: Document                  = $CanvasLayer/Document
 @onready var metal_detector: MetalDetector       = $CanvasLayer/MetalDetector
 @onready var xray: XRay                          = $CanvasLayer/XRay
@@ -23,12 +23,6 @@ var metal_detector_used: bool
 var xray_used: bool
 var chemical_detector_used: bool
 
-func _ready() -> void:
-	DialogueManager.reset()
-	DialogueManager.load_dialogues(DialogueManager.DialogueType.CONVERSATION, "test")
-	_set_text_box()
-	timer.start(3.0)
-
 func setup(character_data: CharacterData, package_data: PackageData, notice_data: NoticeData):
 	interrogation_result = InterrogationResultData.new()
 	interrogation_result.customer_name = character_data.name
@@ -44,6 +38,7 @@ func setup(character_data: CharacterData, package_data: PackageData, notice_data
 	character = character_scene.instantiate()
 	character_slot.add_child(character)
 	character.load_character(character_data)
+	
 	character.document_received.connect(_on_document_received, CONNECT_ONE_SHOT)
 	
 	package = package_scene.instantiate()
@@ -52,6 +47,11 @@ func setup(character_data: CharacterData, package_data: PackageData, notice_data
 	package.load_package(package_data)
 	
 	notice.load_notice(notice_data)
+	
+	DialogueManager.reset()
+	DialogueManager.load_dialogues(DialogueManager.DialogueType.CONVERSATION, "test")
+	text_box.set_dialogue_sound(character.dialogue_sound)
+	_set_text_box()
 
 func _on_document_received(approved: bool) -> void:
 	print('Interrogation: Interrogation complete')
@@ -72,10 +72,10 @@ func _on_xray_used() -> void:
 func _on_chemical_detector_used() -> void:
 	interrogation_result.chemical_detector_used = true
 
-func _on_timer_timeout() -> void:
+func _on_texture_button_pressed() -> void:
 	if DialogueManager.is_finished():
 		text_box.hide_text_box()
-		timer.stop()
+		next_button.hide()
 	else:
 		DialogueManager.next_line()
 		_set_text_box()

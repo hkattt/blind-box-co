@@ -7,4 +7,5 @@
 script = ExtResource("2_idj3h")
 name = "Greg"
 portrait = ExtResource("1_2nlok")
+dialoge_sound = 1
 metadata/_custom_type_script = "uid://b11bqs0e38js3"

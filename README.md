@@ -31,6 +31,10 @@ To setup the project locally, simply clone the repository and open the project i
 - **LilMati**. Dialogue 3 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453087/
 - **LilMati**. Dialogue 4 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453037/
 - **LilMati**. Dialogue 5 SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/LilMati/sounds/453085/
+- **F.M.Audio**. Crunch paper SFX. Licence: Attribution 4.0. Retrieved from: https://freesound.org/people/F.M.Audio/sounds/561733/
+- **pytho0n11**. Scan SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/pyth0n11/sounds/706447/
+- **unadamlar**. Correct SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/unadamlar/sounds/476178/
+- **BaggoNotes**. Incorrect SFX. Licence: Creative Commons 0. Retrieved from: https://freesound.org/people/BaggoNotes/sounds/720893/
 
 ## Code References
 - **Jon Topielski**. Text box. Retrieved from: https://www.youtube.com/watch?v=QEHOiORnXIk 

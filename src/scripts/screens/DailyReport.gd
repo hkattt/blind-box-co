@@ -71,4 +71,5 @@ func _create_earnings_item(p_daily_earnings: int, p_total_earnings: int) -> Earn
 
 func _on_texture_button_pressed() -> void:
 	ReportManager.reset()
+	SoundManager.play_sound(SoundManager.Sound.CLICK)
 	report_close.emit()
