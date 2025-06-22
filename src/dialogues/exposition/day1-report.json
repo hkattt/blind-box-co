@@ -1,0 +1,21 @@
+{
+  "type": "conversation",
+  "lines": [
+	{
+	  "speaker": "Boss",
+	  "line": "Helloooooo and welcome"
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "Welcome to the three-day trial program"
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "You are what? 18? Can't get a job huh?"
+	},
+	{
+	  "speaker": "Boss",
+	  "line": "More lines"
+	}
+  ]
+}

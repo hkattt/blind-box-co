@@ -43,19 +43,19 @@ func get_chemical_detector_cost():
 
 func add_metal_detector_uses(count: int):
 	metal_detector_uses += count
-	var cost: int = get_metal_detector_cost()
+	var cost: int = count * METAL_DETECTOR_COST
 	daily_earnings -= cost
 	total_earnings -= cost
 	
 func add_xray_uses(count: int):
 	xray_uses += count
-	var cost: int = get_xray_cost()
+	var cost: int = count * XRAY_COST
 	daily_earnings -= cost
 	total_earnings -= cost
 	
 func add_chemical_detector_uses(count: int):
 	chemical_detector_uses += count
-	var cost: int = get_chemical_detector_cost()
+	var cost: int = count * CHEMICAL_DETECTOR_COST
 	daily_earnings -= cost
 	total_earnings -= cost
 	
@@ -64,8 +64,6 @@ func add_daily_earnings(earnings: int):
 	total_earnings += earnings
 
 func interrogation_outcome(approved: bool, has_contraband: bool) -> InterrogationResultData.InterrogationOutcome:
-	print(approved)
-	print(has_contraband)
 	if approved:
 		if has_contraband:
 			return InterrogationResultData.InterrogationOutcome.FALSE_NEGATIVE

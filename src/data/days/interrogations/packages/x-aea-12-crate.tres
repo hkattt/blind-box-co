@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PackageData" load_steps=4 format=3 uid="uid://cg76ptnuv2jk3"]
+
+[ext_resource type="Script" uid="uid://udd4i3po5oqi" path="res://resources/PackageData.gd" id="1_jaous"]
+[ext_resource type="Texture2D" uid="uid://dgdc0upveses7" path="res://assets/images/packages/x-aea-12-crate.png" id="1_mdm7n"]
+[ext_resource type="Texture2D" uid="uid://c3r0tiqayg1u6" path="res://assets/images/packages/x-aea-12-crate-hover.png" id="3_o7xgd"]
+
+[resource]
+script = ExtResource("1_jaous")
+image = ExtResource("1_mdm7n")
+xray_image = ExtResource("3_o7xgd")
+has_contraband = true
+has_metal = false
+has_chemical = true
+metadata/_custom_type_script = "uid://udd4i3po5oqi"

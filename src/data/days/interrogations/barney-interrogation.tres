@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InterrogationData" load_steps=4 format=3 uid="uid://j7od7lcvvgmo"]
+
+[ext_resource type="Resource" uid="uid://c0m5uwecc50we" path="res://data/days/interrogations/characters/barney.tres" id="1_ca8e5"]
+[ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_gvhrq"]
+[ext_resource type="Resource" uid="uid://dxquewopxotd7" path="res://data/days/interrogations/packages/barney-present.tres" id="2_fjo0t"]
+
+[resource]
+script = ExtResource("1_gvhrq")
+character = ExtResource("1_ca8e5")
+package = ExtResource("2_fjo0t")
+metadata/_custom_type_script = "uid://6kbdvw4yxbnb"

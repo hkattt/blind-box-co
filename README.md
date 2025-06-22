@@ -15,6 +15,7 @@ The only dependency is the [Godot 4 game engine](https://godotengine.org/).
 To setup the project locally, simply clone the repository and open the project in Godot. 
 
 ## Inspiration
+- [Papers, Please](https://store.steampowered.com/app/239030/Papers_Please/)
 - [Nocturne](https://sunspoken.itch.io/nocturne )
 - [Border Patrol](https://store.steampowered.com/app/3134670/Border_Patrol/)
 - [Sheriff of Nottingham](https://www.gamesworld.com.au/product/sheriff-of-nottingham-2nd-edition/)

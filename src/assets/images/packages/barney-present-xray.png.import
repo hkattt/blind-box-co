@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y1hn0c318fuw"
-path="res://.godot/imported/package-x-ray.png-927a39227cf0698c3ef0c52851b84672.ctex"
+uid="uid://8hg4uq86bx2l"
+path="res://.godot/imported/barney-present-xray.png-277ea8f5661c7ad1e9c2b66f1a561a71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/packages/package-x-ray.png"
-dest_files=["res://.godot/imported/package-x-ray.png-927a39227cf0698c3ef0c52851b84672.ctex"]
+source_file="res://assets/images/packages/barney-present-xray.png"
+dest_files=["res://.godot/imported/barney-present-xray.png-277ea8f5661c7ad1e9c2b66f1a561a71.ctex"]
 
 [params]
 

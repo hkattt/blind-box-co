@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DayData" load_steps=4 format=3 uid="uid://b666q35qqthmw"]
+
+[ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_08o4l"]
+[ext_resource type="Resource" uid="uid://cvsmphogn25av" path="res://data/days/interrogations/kyle-interrogation.tres" id="2_gey5v"]
+[ext_resource type="Script" uid="uid://cf8yjujibee5i" path="res://resources/DayData.gd" id="5_u6tk4"]
+
+[resource]
+script = ExtResource("5_u6tk4")
+interrogations = Array[ExtResource("1_08o4l")]([ExtResource("2_gey5v")])
+metadata/_custom_type_script = "uid://cf8yjujibee5i"

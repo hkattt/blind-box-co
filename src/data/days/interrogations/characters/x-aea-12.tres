@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3 uid="uid://dgsvx3dl87b5c"]
+
+[ext_resource type="Script" uid="uid://b11bqs0e38js3" path="res://resources/CharacterData.gd" id="1_4lphy"]
+[ext_resource type="Texture2D" uid="uid://drhffnpnjp1ht" path="res://assets/images/characters/x-aea-12.png" id="1_ow11u"]
+[ext_resource type="Texture2D" uid="uid://bna8kwjdneggk" path="res://assets/images/characters/x-aea-12-hover.png" id="2_lhr7i"]
+
+[resource]
+script = ExtResource("1_4lphy")
+name = "X Æ A-12"
+portrait = ExtResource("1_ow11u")
+portrait_hover = ExtResource("2_lhr7i")
+dialoge_sound = 2
+dialoge_file_name = "x-aea-12"
+metadata/_custom_type_script = "uid://b11bqs0e38js3"

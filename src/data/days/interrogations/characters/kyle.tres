@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3 uid="uid://m371pks5f6uu"]
+
+[ext_resource type="Texture2D" uid="uid://d2lmh64wdeujn" path="res://assets/images/characters/kyle.png" id="1_mbyxi"]
+[ext_resource type="Script" uid="uid://b11bqs0e38js3" path="res://resources/CharacterData.gd" id="1_rbjna"]
+[ext_resource type="Texture2D" uid="uid://bpx5f5esyl63h" path="res://assets/images/characters/kyle-hover.png" id="2_ujrga"]
+
+[resource]
+script = ExtResource("1_rbjna")
+name = "Kyle"
+portrait = ExtResource("1_mbyxi")
+portrait_hover = ExtResource("2_ujrga")
+dialoge_sound = 4
+dialoge_file_name = "kyle"
+metadata/_custom_type_script = "uid://b11bqs0e38js3"

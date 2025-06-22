@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PackageData" load_steps=4 format=3 uid="uid://cnge5566e2hig"]
+
+[ext_resource type="Script" uid="uid://udd4i3po5oqi" path="res://resources/PackageData.gd" id="1_2l1hl"]
+[ext_resource type="Texture2D" uid="uid://c6esc84y0tk2f" path="res://assets/images/packages/kyle-present.png" id="1_eypjk"]
+[ext_resource type="Texture2D" uid="uid://bonit8bkgh5b2" path="res://assets/images/packages/kyle-present-xray.png" id="3_2j1tm"]
+
+[resource]
+script = ExtResource("1_2l1hl")
+image = ExtResource("1_eypjk")
+xray_image = ExtResource("3_2j1tm")
+has_contraband = true
+has_metal = true
+has_chemical = true
+metadata/_custom_type_script = "uid://udd4i3po5oqi"
