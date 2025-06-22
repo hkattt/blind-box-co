@@ -5,18 +5,18 @@
 [node name="DetectorItemHeader" type="HBoxContainer"]
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_constants/separation = 15
 script = ExtResource("1_hr5sg")
 
 [node name="DetectorName" type="Label" parent="."]
 texture_filter = 3
-custom_minimum_size = Vector2(60, 0)
+custom_minimum_size = Vector2(80, 0)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Detector Name"
 
 [node name="NumberOfUses" type="Label" parent="."]
 texture_filter = 3
+custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "# Uses"

@@ -1,11 +1,12 @@
-[gd_resource type="Resource" script_class="GameData" load_steps=5 format=3 uid="uid://cvwmyvkss4vfi"]
+[gd_resource type="Resource" script_class="GameData" load_steps=6 format=3 uid="uid://cvwmyvkss4vfi"]
 
 [ext_resource type="Script" uid="uid://cf8yjujibee5i" path="res://resources/DayData.gd" id="1_r34r7"]
-[ext_resource type="Resource" uid="uid://bpq7e50dyx0vd" path="res://data/days/day.tres" id="2_vllua"]
+[ext_resource type="Resource" uid="uid://bpq7e50dyx0vd" path="res://data/days/day1.tres" id="2_k2o1c"]
 [ext_resource type="Resource" uid="uid://jpuarmv1d60u" path="res://data/days/day2.tres" id="3_r34r7"]
+[ext_resource type="Resource" uid="uid://c0x2acmnbhuda" path="res://data/days/day3.tres" id="4_7fe16"]
 [ext_resource type="Script" uid="uid://po8htodqto00" path="res://resources/GameData.gd" id="4_yqv0c"]
 
 [resource]
 script = ExtResource("4_yqv0c")
-days = Array[ExtResource("1_r34r7")]([ExtResource("2_vllua"), ExtResource("3_r34r7")])
+days = Array[ExtResource("1_r34r7")]([ExtResource("2_k2o1c"), ExtResource("3_r34r7"), ExtResource("4_7fe16")])
 metadata/_custom_type_script = "uid://po8htodqto00"

@@ -1,0 +1,13 @@
+{
+  "type": "conversation",
+  "lines": [
+	{
+	  "speaker": "Barney",
+	  "line": "Heeeeeh haayy matey!"
+	},
+	{
+	  "speaker": "Barney",
+	  "line": "Help me send these old toys to the children's hospital."
+	},
+  ]
+}

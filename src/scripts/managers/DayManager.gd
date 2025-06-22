@@ -6,13 +6,11 @@ var interrogation_scene: PackedScene = preload("res://scenes/screens/Interrogati
 
 var current_interrogation: Node2D = null
 var interrogation_queue: Array[InterrogationData] = []
-var notice_data: NoticeData
 var interrogation_results: Array[InterrogationResultData] = []
 var screen_transition: ScreenTransition
 
 func start_day(day_data: DayData, p_screen_transition: ScreenTransition) -> void:
 	interrogation_queue = day_data.interrogations
-	notice_data = day_data.notice
 	screen_transition = p_screen_transition
 	process_next_interrogation()
 
@@ -39,7 +37,7 @@ func process_next_interrogation() -> void:
 func _add_interrogation(interrogation_data: InterrogationData) -> void:
 	get_tree().current_scene.add_child(current_interrogation)
 	# Populate with the interrogation data 
-	current_interrogation.setup(interrogation_data.character, interrogation_data.package, notice_data)
+	current_interrogation.setup(interrogation_data.character, interrogation_data.package)
 	current_interrogation.interrogation_complete.connect(_on_interrogation_complete, CONNECT_ONE_SHOT)
 	await  screen_transition.fade_in()
 

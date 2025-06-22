@@ -46,7 +46,6 @@ func _update_from_state():
 			timer.stop()
 		MetalDetectorState.ON:
 			animated_sprite.animation = "On"
-			SoundManager.stop_sound()
 			timer.stop()
 		MetalDetectorState.FLASHING:
 			animated_sprite.animation = "Flash"

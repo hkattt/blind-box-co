@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3 uid="uid://ckryrrq47bw06"]
+
+[ext_resource type="Script" uid="uid://b11bqs0e38js3" path="res://resources/CharacterData.gd" id="1_d8xpl"]
+[ext_resource type="Texture2D" uid="uid://6jam3gi7g1du" path="res://assets/images/characters/mona.png" id="1_l8eck"]
+[ext_resource type="Texture2D" uid="uid://c8n6ykdidx6c7" path="res://assets/images/characters/mona-hover.png" id="2_rutkb"]
+
+[resource]
+script = ExtResource("1_d8xpl")
+name = "Mona"
+portrait = ExtResource("1_l8eck")
+portrait_hover = ExtResource("2_rutkb")
+dialoge_sound = 5
+dialoge_file_name = "mona"
+metadata/_custom_type_script = "uid://b11bqs0e38js3"

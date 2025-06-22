@@ -4,7 +4,6 @@ signal interrogation_complete(result: InterrogationResultData)
 
 @onready var character_slot: Control             = $CharacterSlot
 @onready var package_slot: Control               = $PackageSlot
-@onready var notice: Notice                      = $Notice
 @onready var text_box: TextBox                   = $CanvasLayer/TextBox
 @onready var next_button: NextButton             = $CanvasLayer/NextButton
 @onready var stamp_approve: Stamp                = $CanvasLayer/StampApprove
@@ -39,7 +38,7 @@ func _ready() -> void:
 	chemical_detector.hide()
 	chemical_detector.process_mode = Node.PROCESS_MODE_DISABLED
 
-func setup(character_data: CharacterData, package_data: PackageData, notice_data: NoticeData):
+func setup(character_data: CharacterData, package_data: PackageData):
 	interrogation_result = InterrogationResultData.new()
 	interrogation_result.customer_name = character_data.name
 	interrogation_result.metal_detector_used = false
@@ -62,11 +61,10 @@ func setup(character_data: CharacterData, package_data: PackageData, notice_data
 	package.set_xray(xray)
 	package.load_package(package_data)
 	
-	notice.load_notice(notice_data)
-	
 	DialogueManager.reset()
-	DialogueManager.load_dialogues(DialogueManager.DialogueType.CONVERSATION, "test")
+	DialogueManager.load_dialogues(DialogueManager.DialogueType.CONVERSATION, character.dialogue_file_name)
 	text_box.set_dialogue_sound(character.dialogue_sound)
+	text_box.set_speaker(character_data.name)
 	_set_text_box()
 
 func _on_document_received(approved: bool) -> void:

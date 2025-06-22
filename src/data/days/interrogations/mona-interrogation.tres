@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InterrogationData" load_steps=4 format=3 uid="uid://dgsorvsf1yfk4"]
+
+[ext_resource type="Resource" uid="uid://ckryrrq47bw06" path="res://data/days/interrogations/characters/mona.tres" id="1_ftwdh"]
+[ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_o2v1p"]
+[ext_resource type="Resource" uid="uid://ddg5hw2q6fdwe" path="res://data/days/interrogations/packages/mona-bag.tres" id="2_x5ylu"]
+
+[resource]
+script = ExtResource("1_o2v1p")
+character = ExtResource("1_ftwdh")
+package = ExtResource("2_x5ylu")
+metadata/_custom_type_script = "uid://6kbdvw4yxbnb"

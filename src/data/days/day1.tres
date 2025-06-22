@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DayData" load_steps=5 format=3 uid="uid://dxrrjw0cv6fab"]
+
+[ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_80ol7"]
+[ext_resource type="Resource" uid="uid://dgsorvsf1yfk4" path="res://data/days/interrogations/mona-interrogation.tres" id="2_7hagb"]
+[ext_resource type="Script" uid="uid://cf8yjujibee5i" path="res://resources/DayData.gd" id="2_q6mt3"]
+[ext_resource type="Resource" uid="uid://lriwfomtnnqh" path="res://data/days/interrogations/x-aea-12-interrogation.tres" id="3_7hagb"]
+
+[resource]
+script = ExtResource("2_q6mt3")
+interrogations = Array[ExtResource("1_80ol7")]([ExtResource("2_7hagb"), ExtResource("3_7hagb")])
+metadata/_custom_type_script = "uid://cf8yjujibee5i"

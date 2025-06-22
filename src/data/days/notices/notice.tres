@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="NoticeData" load_steps=2 format=3 uid="uid://d2t2on4vkhp55"]
-
-[ext_resource type="Script" uid="uid://blcisleuv746k" path="res://resources/NoticeData.gd" id="1_tgst6"]
-
-[resource]
-script = ExtResource("1_tgst6")
-text = "This is a big long notice"
-metadata/_custom_type_script = "uid://blcisleuv746k"

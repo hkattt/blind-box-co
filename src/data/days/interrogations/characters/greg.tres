@@ -10,4 +10,5 @@ name = "Greg"
 portrait = ExtResource("1_2nlok")
 portrait_hover = ExtResource("2_pjkn2")
 dialoge_sound = 1
+dialoge_file_name = "greg"
 metadata/_custom_type_script = "uid://b11bqs0e38js3"

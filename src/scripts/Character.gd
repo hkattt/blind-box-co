@@ -5,6 +5,7 @@ signal document_received(approved: bool)
 @onready var portrait = $Portrait
 
 var dialogue_sound: SoundManager.Sound
+var dialogue_file_name: String
 var portrait_texture: Texture2D
 var portrait_hover_texture: Texture2D
 var hovered_document: Area2D = null
@@ -13,6 +14,7 @@ func load_character(character_data: CharacterData):
 	portrait_texture = character_data.portrait
 	portrait_hover_texture = character_data.portrait_hover
 	portrait.texture = portrait_texture
+	dialogue_file_name = character_data.dialoge_file_name
 	dialogue_sound = number_to_dialogue_sound(character_data.dialoge_sound)
 
 func number_to_dialogue_sound(dialogue_number: int):

@@ -1,0 +1,13 @@
+{
+  "type": "conversation",
+  "lines": [
+	{
+	  "speaker": "Mona",
+	  "line": "Hey there! I am hoping to send some art supplies to a friend."
+	},
+	{
+	  "speaker": "Mona",
+	  "line": "Sorry if the paint triggers any of your detectors!"
+	},
+  ]
+}

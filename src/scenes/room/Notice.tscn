@@ -1,18 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3jhosy5kqbbw"]
+[gd_scene load_steps=4 format=3 uid="uid://c3jhosy5kqbbw"]
 
 [ext_resource type="Texture2D" uid="uid://bw73xspqdmyhb" path="res://assets/images/room/notice.png" id="1_73ngg"]
-[ext_resource type="Script" uid="uid://ebfbda06jhae" path="res://scripts/room/Notice.gd" id="1_xhckg"]
+[ext_resource type="Texture2D" uid="uid://cuj47tqqkx7gi" path="res://assets/images/room/notice-content.png" id="2_xhckg"]
+
+[sub_resource type="GDScript" id="GDScript_73ngg"]
 
 [node name="Notice" type="Node2D"]
-script = ExtResource("1_xhckg")
+script = SubResource("GDScript_73ngg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 3
 texture = ExtResource("1_73ngg")
 
-[node name="Label" type="Label" parent="."]
-offset_left = -24.0
-offset_top = -24.0
-offset_right = 26.0
-offset_bottom = 44.0
-autowrap_mode = 3
+[node name="Content" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(0, -7)
+texture = ExtResource("2_xhckg")
