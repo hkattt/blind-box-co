@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PackageData" load_steps=4 format=3 uid="uid://c24wxadqu6ib5"]
+
+[ext_resource type="Script" uid="uid://udd4i3po5oqi" path="res://resources/PackageData.gd" id="1_ca7yu"]
+[ext_resource type="Texture2D" uid="uid://c3gfxgwt2mfb" path="res://assets/images/packages/torvald-package.png" id="1_xl8wv"]
+[ext_resource type="Texture2D" uid="uid://bdlqyhfi1mgbf" path="res://assets/images/packages/torvald-package-xray.png" id="3_xl8wv"]
+
+[resource]
+script = ExtResource("1_ca7yu")
+image = ExtResource("1_xl8wv")
+xray_image = ExtResource("3_xl8wv")
+has_contraband = true
+has_metal = true
+has_chemical = true
+x_offset = -40
+y_offset = -26
+metadata/_custom_type_script = "uid://udd4i3po5oqi"

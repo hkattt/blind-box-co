@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="InterrogationData" load_steps=4 format=3 uid="uid://bbfn5bjfkuq50"]
+
+[ext_resource type="Resource" uid="uid://cwwoe21udkmvb" path="res://data/days/interrogations/characters/torvald.tres" id="1_0fudr"]
+[ext_resource type="Script" uid="uid://6kbdvw4yxbnb" path="res://resources/InterrogationData.gd" id="1_iuixh"]
+[ext_resource type="Resource" uid="uid://c24wxadqu6ib5" path="res://data/days/interrogations/packages/torvald-package.tres" id="2_0h3kw"]
+
+[resource]
+script = ExtResource("1_iuixh")
+character = ExtResource("1_0fudr")
+package = ExtResource("2_0h3kw")
+metadata/_custom_type_script = "uid://6kbdvw4yxbnb"
