@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://udd4i3po5oqi" path="res://resources/PackageData.gd" id="1_2n15l"]
 [ext_resource type="Texture2D" uid="uid://s8nmxacg88jc" path="res://assets/images/packages/celestia-bag.png" id="1_7rf0o"]
-[ext_resource type="Texture2D" uid="uid://bvq2yfunj3i3o" path="res://assets/images/packages/celestia-bag-hover.png" id="3_jsdlx"]
+[ext_resource type="Texture2D" uid="uid://bxse4mx6a3vic" path="res://assets/images/packages/celestia-bag-xray.png" id="3_7rf0o"]
 
 [resource]
 script = ExtResource("1_2n15l")
 image = ExtResource("1_7rf0o")
-xray_image = ExtResource("3_jsdlx")
+xray_image = ExtResource("3_7rf0o")
 has_contraband = false
 has_metal = true
 has_chemical = true
